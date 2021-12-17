@@ -42,6 +42,20 @@ namespace hw5v3
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: 這行程式碼會將資料載入 'machine_location_DataSet.Machines' 資料表。您可以視需要進行移動或移除。
+            this.machinesTableAdapter8.Fill(this.machine_location_DataSet.Machines);
+            // TODO: 這行程式碼會將資料載入 'machine_key_search_DataSet.Machines' 資料表。您可以視需要進行移動或移除。
+            this.machinesTableAdapter6.Fill(this.machine_key_search_DataSet.Machines);
+            // TODO: 這行程式碼會將資料載入 'machine_category_DataSet.Machines' 資料表。您可以視需要進行移動或移除。
+            this.machinesTableAdapter5.Fill(this.machine_category_DataSet.Machines);
+            // TODO: 這行程式碼會將資料載入 'machine_driver_DataSet.Machines' 資料表。您可以視需要進行移動或移除。
+            this.machinesTableAdapter4.Fill(this.machine_driver_DataSet.Machines);
+            // TODO: 這行程式碼會將資料載入 'machine_driver_DataSet.Driver' 資料表。您可以視需要進行移動或移除。
+            this.driverTableAdapter.Fill(this.machine_driver_DataSet.Driver);
+            // TODO: 這行程式碼會將資料載入 'machine_category_DataSet.Categories' 資料表。您可以視需要進行移動或移除。
+            this.categoriesTableAdapter.Fill(this.machine_category_DataSet.Categories);
+            // TODO: 這行程式碼會將資料載入 'machineDataSet.Machines' 資料表。您可以視需要進行移動或移除。
+            this.machinesTableAdapter3.Fill(this.machineDataSet.Machines);
             // TODO: 這行程式碼會將資料載入 'businessDataSet_Tim5.Latest_order' 資料表。您可以視需要進行移動或移除。
             this.latest_orderTableAdapter.Fill(this.businessDataSet_Tim5.Latest_order);
             // TODO: 這行程式碼會將資料載入 'businessDataSet_Tim52.Orders' 資料表。您可以視需要進行移動或移除。
@@ -199,6 +213,44 @@ namespace hw5v3
                 );
             ordersTableAdapter1.Fill(this.businessDataSet_Tim5.Orders);
             MessageBox.Show("sucess!");
+        }
+
+        private void fillByToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.machinesTableAdapter6.FillBy(this.machine_key_search_DataSet.Machines, keywordToolStripTextBox.Text);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void fillToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.machinesTableAdapter7.Fill(this.mation_location_DataSet_detail.Machines, ((int)(System.Convert.ChangeType(machine_idToolStripTextBox.Text, typeof(int)))));
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                this.machinesTableAdapter7.Fill(this.mation_location_DataSet_detail.Machines, ((int)(System.Convert.ChangeType(listBox1.SelectedValue, typeof(int)))));
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
         }
     }
 }

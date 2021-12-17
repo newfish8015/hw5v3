@@ -42,10 +42,96 @@ namespace hw5v3
             System.Windows.Forms.Label locationLabel;
             System.Windows.Forms.Label sellerNameLabel;
             System.Windows.Forms.Label expr1Label;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             System.Windows.Forms.Label lastest_Order_idLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.Label machine_idLabel;
+            System.Windows.Forms.Label category_idLabel;
+            System.Windows.Forms.Label driver_idLabel;
+            System.Windows.Forms.Label yearsLabel;
+            System.Windows.Forms.Label priceLabel1;
+            System.Windows.Forms.Label titleLabel1;
+            System.Windows.Forms.Label locationLabel1;
+            System.Windows.Forms.Label countryLabel;
+            System.Windows.Forms.Label conditionLabel;
+            System.Windows.Forms.Label payment_MethodLabel;
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.vehical = new System.Windows.Forms.TabPage();
+            this.vehical_tabControl = new System.Windows.Forms.TabControl();
+            this.add_change_remove = new System.Windows.Forms.TabPage();
+            this.bindingNavigator3 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.machinesBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.machineDataSet = new hw5v3.machineDataSet();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
+            this.machinesDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn68 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn70 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.key_search_tabPage11 = new System.Windows.Forms.TabPage();
+            this.machinesDataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn71 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn72 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn73 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn74 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn75 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn76 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn77 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn78 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn79 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn80 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.machinesBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
+            this.machine_key_search_DataSet = new hw5v3.machine_key_search_DataSet();
+            this.category_search_tabPage = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.machineidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Driver_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.category_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.condition = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.country = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.location = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Payment_Method = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.title = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fKMachinescatego2D27B809BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.categoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.machine_category_DataSet = new hw5v3.machine_category_DataSet();
+            this.vehical_catigory_search = new System.Windows.Forms.Label();
+            this.comboBox13 = new System.Windows.Forms.ComboBox();
+            this.driver_search_tabPage10 = new System.Windows.Forms.TabPage();
+            this.vehical_driver_search = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.machineidDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.driveridDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.yearsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.locationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.countryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.conditionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paymentMethodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fKMachinesDriver2E1BDC42BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.driverBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.machine_driver_DataSet = new hw5v3.machine_driver_DataSet();
+            this.comboBox14 = new System.Windows.Forms.ComboBox();
+            this.driverBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.tabPage10 = new System.Windows.Forms.TabPage();
             this.service = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -182,9 +268,11 @@ namespace hw5v3
             this.membershipBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
             this.businessDataSet_TIM4 = new hw5v3.BusinessDataSet_TIM4();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.lastest_Order_idTextBox = new System.Windows.Forms.TextBox();
+            this.latest_orderBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.businessDataSet_Tim5 = new hw5v3.BusinessDataSet_Tim5();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.nameBindingSource9 = new System.Windows.Forms.BindingSource(this.components);
-            this.businessDataSet_Tim5 = new hw5v3.BusinessDataSet_Tim5();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.staffBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
@@ -192,8 +280,6 @@ namespace hw5v3
             this.nameBindingSource8 = new System.Windows.Forms.BindingSource(this.components);
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.machinesBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
-            this.ordersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.ordersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.button4 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -208,6 +294,7 @@ namespace hw5v3
             this.dataGridViewTextBoxColumn43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ordersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.label11 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -259,6 +346,7 @@ namespace hw5v3
             this.ordersBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.businessDataSet_Tim52 = new hw5v3.BusinessDataSet_Tim5();
             this.driver = new System.Windows.Forms.TabPage();
+            this.ordersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.nameBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
             this.staffBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.nameBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
@@ -307,9 +395,44 @@ namespace hw5v3
             this.staffTableAdapter1 = new hw5v3.BusinessDataSet_Tim5TableAdapters.StaffTableAdapter();
             this.membershipTableAdapter4 = new hw5v3.BusinessDataSet_Tim5TableAdapters.MembershipTableAdapter();
             this.nameBindingSource10 = new System.Windows.Forms.BindingSource(this.components);
-            this.latest_orderBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.latest_orderTableAdapter = new hw5v3.BusinessDataSet_Tim5TableAdapters.Latest_orderTableAdapter();
-            this.lastest_Order_idTextBox = new System.Windows.Forms.TextBox();
+            this.machinesTableAdapter3 = new hw5v3.machineDataSetTableAdapters.MachinesTableAdapter();
+            this.tableAdapterManager4 = new hw5v3.machineDataSetTableAdapters.TableAdapterManager();
+            this.fKOrdersMachine34C8D9D1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.categoriesTableAdapter = new hw5v3.machine_category_DataSetTableAdapters.CategoriesTableAdapter();
+            this.fKOrdersMachine34C8D9D1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.driverTableAdapter = new hw5v3.machine_driver_DataSetTableAdapters.DriverTableAdapter();
+            this.machinesTableAdapter4 = new hw5v3.machine_driver_DataSetTableAdapters.MachinesTableAdapter();
+            this.machinesTableAdapter5 = new hw5v3.machine_category_DataSetTableAdapters.MachinesTableAdapter();
+            this.machinesTableAdapter6 = new hw5v3.machine_key_search_DataSetTableAdapters.MachinesTableAdapter();
+            this.tableAdapterManager5 = new hw5v3.machine_key_search_DataSetTableAdapters.TableAdapterManager();
+            this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
+            this.keywordToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.keywordToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.mation_location_DataSet_detail = new hw5v3.mation_location_DataSet_detail();
+            this.machinesBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
+            this.machinesTableAdapter7 = new hw5v3.mation_location_DataSet_detailTableAdapters.MachinesTableAdapter();
+            this.tableAdapterManager6 = new hw5v3.mation_location_DataSet_detailTableAdapters.TableAdapterManager();
+            this.fillToolStrip = new System.Windows.Forms.ToolStrip();
+            this.machine_idToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.machine_idToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.fillToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.machine_idTextBox = new System.Windows.Forms.TextBox();
+            this.category_idTextBox = new System.Windows.Forms.TextBox();
+            this.driver_idTextBox = new System.Windows.Forms.TextBox();
+            this.yearsTextBox = new System.Windows.Forms.TextBox();
+            this.priceTextBox = new System.Windows.Forms.TextBox();
+            this.titleTextBox = new System.Windows.Forms.TextBox();
+            this.locationTextBox = new System.Windows.Forms.TextBox();
+            this.countryTextBox = new System.Windows.Forms.TextBox();
+            this.conditionTextBox = new System.Windows.Forms.TextBox();
+            this.payment_MethodTextBox = new System.Windows.Forms.TextBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.machine_location_DataSet = new hw5v3.machine_location_DataSet();
+            this.machinelocationDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.machinesBindingSource8 = new System.Windows.Forms.BindingSource(this.components);
+            this.machinesTableAdapter8 = new hw5v3.machine_location_DataSetTableAdapters.MachinesTableAdapter();
             birth_DateLabel = new System.Windows.Forms.Label();
             adressLabel = new System.Windows.Forms.Label();
             last_nameLabel = new System.Windows.Forms.Label();
@@ -323,7 +446,41 @@ namespace hw5v3
             sellerNameLabel = new System.Windows.Forms.Label();
             expr1Label = new System.Windows.Forms.Label();
             lastest_Order_idLabel = new System.Windows.Forms.Label();
+            machine_idLabel = new System.Windows.Forms.Label();
+            category_idLabel = new System.Windows.Forms.Label();
+            driver_idLabel = new System.Windows.Forms.Label();
+            yearsLabel = new System.Windows.Forms.Label();
+            priceLabel1 = new System.Windows.Forms.Label();
+            titleLabel1 = new System.Windows.Forms.Label();
+            locationLabel1 = new System.Windows.Forms.Label();
+            countryLabel = new System.Windows.Forms.Label();
+            conditionLabel = new System.Windows.Forms.Label();
+            payment_MethodLabel = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
+            this.vehical.SuspendLayout();
+            this.vehical_tabControl.SuspendLayout();
+            this.add_change_remove.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator3)).BeginInit();
+            this.bindingNavigator3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machineDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machinesDataGridView)).BeginInit();
+            this.key_search_tabPage11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.machinesDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machine_key_search_DataSet)).BeginInit();
+            this.category_search_tabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKMachinescatego2D27B809BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machine_category_DataSet)).BeginInit();
+            this.driver_search_tabPage10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKMachinesDriver2E1BDC42BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machine_driver_DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverBindingSource1)).BeginInit();
+            this.tabPage10.SuspendLayout();
             this.service.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -361,14 +518,14 @@ namespace hw5v3
             ((System.ComponentModel.ISupportInitialize)(this.membershipBindingSource6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.businessDataSet_TIM4)).BeginInit();
             this.tabPage7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nameBindingSource9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.latest_orderBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.businessDataSet_Tim5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nameBindingSource9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.staffBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nameBindingSource8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersDataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource1)).BeginInit();
             this.tabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.membershipDataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.membershipBindingSource9)).BeginInit();
@@ -381,6 +538,7 @@ namespace hw5v3
             ((System.ComponentModel.ISupportInitialize)(this.nameBindingSource12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.businessDataSet_Tim52)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nameBindingSource7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.staffBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nameBindingSource6)).BeginInit();
@@ -408,7 +566,15 @@ namespace hw5v3
             ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.membershipDataTable1BindingSource6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nameBindingSource10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.latest_orderBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKOrdersMachine34C8D9D1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKOrdersMachine34C8D9D1BindingSource1)).BeginInit();
+            this.fillByToolStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mation_location_DataSet_detail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource7)).BeginInit();
+            this.fillToolStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.machine_location_DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machinelocationDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource8)).BeginInit();
             this.SuspendLayout();
             // 
             // birth_DateLabel
@@ -520,6 +686,15 @@ namespace hw5v3
             expr1Label.TabIndex = 16;
             expr1Label.Text = "MAX_Member_ID";
             // 
+            // lastest_Order_idLabel
+            // 
+            lastest_Order_idLabel.AutoSize = true;
+            lastest_Order_idLabel.Location = new System.Drawing.Point(409, 89);
+            lastest_Order_idLabel.Name = "lastest_Order_idLabel";
+            lastest_Order_idLabel.Size = new System.Drawing.Size(77, 12);
+            lastest_Order_idLabel.TabIndex = 20;
+            lastest_Order_idLabel.Text = "lastest Order id:";
+            // 
             // tabControl1
             // 
             this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -536,6 +711,8 @@ namespace hw5v3
             // 
             // vehical
             // 
+            this.vehical.AutoScroll = true;
+            this.vehical.Controls.Add(this.vehical_tabControl);
             this.vehical.Location = new System.Drawing.Point(4, 22);
             this.vehical.Name = "vehical";
             this.vehical.Padding = new System.Windows.Forms.Padding(3);
@@ -543,6 +720,672 @@ namespace hw5v3
             this.vehical.TabIndex = 0;
             this.vehical.Text = "vehical";
             this.vehical.UseVisualStyleBackColor = true;
+            // 
+            // vehical_tabControl
+            // 
+            this.vehical_tabControl.Controls.Add(this.add_change_remove);
+            this.vehical_tabControl.Controls.Add(this.key_search_tabPage11);
+            this.vehical_tabControl.Controls.Add(this.category_search_tabPage);
+            this.vehical_tabControl.Controls.Add(this.driver_search_tabPage10);
+            this.vehical_tabControl.Controls.Add(this.tabPage10);
+            this.vehical_tabControl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.vehical_tabControl.Location = new System.Drawing.Point(0, 6);
+            this.vehical_tabControl.Name = "vehical_tabControl";
+            this.vehical_tabControl.SelectedIndex = 0;
+            this.vehical_tabControl.Size = new System.Drawing.Size(789, 421);
+            this.vehical_tabControl.TabIndex = 0;
+            // 
+            // add_change_remove
+            // 
+            this.add_change_remove.Controls.Add(this.bindingNavigator3);
+            this.add_change_remove.Controls.Add(this.machinesDataGridView);
+            this.add_change_remove.Location = new System.Drawing.Point(4, 22);
+            this.add_change_remove.Name = "add_change_remove";
+            this.add_change_remove.Padding = new System.Windows.Forms.Padding(3);
+            this.add_change_remove.Size = new System.Drawing.Size(781, 395);
+            this.add_change_remove.TabIndex = 0;
+            this.add_change_remove.Text = "add_change_remove";
+            this.add_change_remove.UseVisualStyleBackColor = true;
+            // 
+            // bindingNavigator3
+            // 
+            this.bindingNavigator3.AddNewItem = this.toolStripButton1;
+            this.bindingNavigator3.BindingSource = this.machinesBindingSource5;
+            this.bindingNavigator3.CountItem = this.toolStripLabel1;
+            this.bindingNavigator3.DeleteItem = this.toolStripButton2;
+            this.bindingNavigator3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton3,
+            this.toolStripButton4,
+            this.toolStripSeparator1,
+            this.toolStripTextBox1,
+            this.toolStripLabel1,
+            this.toolStripSeparator2,
+            this.toolStripButton5,
+            this.toolStripButton6,
+            this.toolStripSeparator3,
+            this.toolStripButton1,
+            this.toolStripButton2,
+            this.toolStripButton7});
+            this.bindingNavigator3.Location = new System.Drawing.Point(3, 3);
+            this.bindingNavigator3.MoveFirstItem = this.toolStripButton3;
+            this.bindingNavigator3.MoveLastItem = this.toolStripButton6;
+            this.bindingNavigator3.MoveNextItem = this.toolStripButton5;
+            this.bindingNavigator3.MovePreviousItem = this.toolStripButton4;
+            this.bindingNavigator3.Name = "bindingNavigator3";
+            this.bindingNavigator3.PositionItem = this.toolStripTextBox1;
+            this.bindingNavigator3.Size = new System.Drawing.Size(775, 25);
+            this.bindingNavigator3.TabIndex = 2;
+            this.bindingNavigator3.Text = "bindingNavigator1";
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.RightToLeftAutoMirrorImage = true;
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "加入新的";
+            // 
+            // machinesBindingSource5
+            // 
+            this.machinesBindingSource5.DataMember = "Machines";
+            this.machinesBindingSource5.DataSource = this.machineDataSet;
+            // 
+            // machineDataSet
+            // 
+            this.machineDataSet.DataSetName = "machineDataSet";
+            this.machineDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(27, 22);
+            this.toolStripLabel1.Text = "/{0}";
+            this.toolStripLabel1.ToolTipText = "項目總數";
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.RightToLeftAutoMirrorImage = true;
+            this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton2.Text = "刪除";
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.RightToLeftAutoMirrorImage = true;
+            this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton3.Text = "移到最前面";
+            // 
+            // toolStripButton4
+            // 
+            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.RightToLeftAutoMirrorImage = true;
+            this.toolStripButton4.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton4.Text = "移到上一個";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.AccessibleName = "位置";
+            this.toolStripTextBox1.AutoSize = false;
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Size = new System.Drawing.Size(50, 23);
+            this.toolStripTextBox1.Text = "0";
+            this.toolStripTextBox1.ToolTipText = "目前的位置";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButton5
+            // 
+            this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
+            this.toolStripButton5.Name = "toolStripButton5";
+            this.toolStripButton5.RightToLeftAutoMirrorImage = true;
+            this.toolStripButton5.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton5.Text = "移到下一個";
+            // 
+            // toolStripButton6
+            // 
+            this.toolStripButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
+            this.toolStripButton6.Name = "toolStripButton6";
+            this.toolStripButton6.RightToLeftAutoMirrorImage = true;
+            this.toolStripButton6.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton6.Text = "移到最後面";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButton7
+            // 
+            this.toolStripButton7.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton7.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton7.Image")));
+            this.toolStripButton7.Name = "toolStripButton7";
+            this.toolStripButton7.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton7.Text = "儲存資料";
+            // 
+            // machinesDataGridView
+            // 
+            this.machinesDataGridView.AutoGenerateColumns = false;
+            this.machinesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.machinesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn61,
+            this.dataGridViewTextBoxColumn62,
+            this.dataGridViewTextBoxColumn63,
+            this.dataGridViewTextBoxColumn64,
+            this.dataGridViewTextBoxColumn65,
+            this.dataGridViewTextBoxColumn66,
+            this.dataGridViewTextBoxColumn67,
+            this.dataGridViewTextBoxColumn68,
+            this.dataGridViewTextBoxColumn69,
+            this.dataGridViewTextBoxColumn70});
+            this.machinesDataGridView.DataSource = this.machinesBindingSource5;
+            this.machinesDataGridView.Location = new System.Drawing.Point(-4, 31);
+            this.machinesDataGridView.Name = "machinesDataGridView";
+            this.machinesDataGridView.RowTemplate.Height = 24;
+            this.machinesDataGridView.Size = new System.Drawing.Size(779, 361);
+            this.machinesDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn61
+            // 
+            this.dataGridViewTextBoxColumn61.DataPropertyName = "Machine_id";
+            this.dataGridViewTextBoxColumn61.HeaderText = "Machine_id";
+            this.dataGridViewTextBoxColumn61.Name = "dataGridViewTextBoxColumn61";
+            // 
+            // dataGridViewTextBoxColumn62
+            // 
+            this.dataGridViewTextBoxColumn62.DataPropertyName = "category_id";
+            this.dataGridViewTextBoxColumn62.HeaderText = "category_id";
+            this.dataGridViewTextBoxColumn62.Name = "dataGridViewTextBoxColumn62";
+            // 
+            // dataGridViewTextBoxColumn63
+            // 
+            this.dataGridViewTextBoxColumn63.DataPropertyName = "Driver_id";
+            this.dataGridViewTextBoxColumn63.HeaderText = "Driver_id";
+            this.dataGridViewTextBoxColumn63.Name = "dataGridViewTextBoxColumn63";
+            // 
+            // dataGridViewTextBoxColumn64
+            // 
+            this.dataGridViewTextBoxColumn64.DataPropertyName = "years";
+            this.dataGridViewTextBoxColumn64.HeaderText = "years";
+            this.dataGridViewTextBoxColumn64.Name = "dataGridViewTextBoxColumn64";
+            // 
+            // dataGridViewTextBoxColumn65
+            // 
+            this.dataGridViewTextBoxColumn65.DataPropertyName = "price";
+            this.dataGridViewTextBoxColumn65.HeaderText = "price";
+            this.dataGridViewTextBoxColumn65.Name = "dataGridViewTextBoxColumn65";
+            // 
+            // dataGridViewTextBoxColumn66
+            // 
+            this.dataGridViewTextBoxColumn66.DataPropertyName = "title";
+            this.dataGridViewTextBoxColumn66.HeaderText = "title";
+            this.dataGridViewTextBoxColumn66.Name = "dataGridViewTextBoxColumn66";
+            // 
+            // dataGridViewTextBoxColumn67
+            // 
+            this.dataGridViewTextBoxColumn67.DataPropertyName = "location";
+            this.dataGridViewTextBoxColumn67.HeaderText = "location";
+            this.dataGridViewTextBoxColumn67.Name = "dataGridViewTextBoxColumn67";
+            // 
+            // dataGridViewTextBoxColumn68
+            // 
+            this.dataGridViewTextBoxColumn68.DataPropertyName = "country";
+            this.dataGridViewTextBoxColumn68.HeaderText = "country";
+            this.dataGridViewTextBoxColumn68.Name = "dataGridViewTextBoxColumn68";
+            // 
+            // dataGridViewTextBoxColumn69
+            // 
+            this.dataGridViewTextBoxColumn69.DataPropertyName = "condition";
+            this.dataGridViewTextBoxColumn69.HeaderText = "condition";
+            this.dataGridViewTextBoxColumn69.Name = "dataGridViewTextBoxColumn69";
+            // 
+            // dataGridViewTextBoxColumn70
+            // 
+            this.dataGridViewTextBoxColumn70.DataPropertyName = "Payment_Method";
+            this.dataGridViewTextBoxColumn70.HeaderText = "Payment_Method";
+            this.dataGridViewTextBoxColumn70.Name = "dataGridViewTextBoxColumn70";
+            // 
+            // key_search_tabPage11
+            // 
+            this.key_search_tabPage11.AutoScroll = true;
+            this.key_search_tabPage11.Controls.Add(this.fillByToolStrip);
+            this.key_search_tabPage11.Controls.Add(this.machinesDataGridView1);
+            this.key_search_tabPage11.Location = new System.Drawing.Point(4, 22);
+            this.key_search_tabPage11.Name = "key_search_tabPage11";
+            this.key_search_tabPage11.Padding = new System.Windows.Forms.Padding(3);
+            this.key_search_tabPage11.Size = new System.Drawing.Size(781, 395);
+            this.key_search_tabPage11.TabIndex = 1;
+            this.key_search_tabPage11.Text = "key_search";
+            this.key_search_tabPage11.UseVisualStyleBackColor = true;
+            // 
+            // machinesDataGridView1
+            // 
+            this.machinesDataGridView1.AutoGenerateColumns = false;
+            this.machinesDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.machinesDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn71,
+            this.dataGridViewTextBoxColumn72,
+            this.dataGridViewTextBoxColumn73,
+            this.dataGridViewTextBoxColumn74,
+            this.dataGridViewTextBoxColumn75,
+            this.dataGridViewTextBoxColumn76,
+            this.dataGridViewTextBoxColumn77,
+            this.dataGridViewTextBoxColumn78,
+            this.dataGridViewTextBoxColumn79,
+            this.dataGridViewTextBoxColumn80});
+            this.machinesDataGridView1.DataSource = this.machinesBindingSource6;
+            this.machinesDataGridView1.Location = new System.Drawing.Point(2, 31);
+            this.machinesDataGridView1.Name = "machinesDataGridView1";
+            this.machinesDataGridView1.RowTemplate.Height = 24;
+            this.machinesDataGridView1.Size = new System.Drawing.Size(763, 349);
+            this.machinesDataGridView1.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn71
+            // 
+            this.dataGridViewTextBoxColumn71.DataPropertyName = "Machine_id";
+            this.dataGridViewTextBoxColumn71.HeaderText = "Machine_id";
+            this.dataGridViewTextBoxColumn71.Name = "dataGridViewTextBoxColumn71";
+            // 
+            // dataGridViewTextBoxColumn72
+            // 
+            this.dataGridViewTextBoxColumn72.DataPropertyName = "category_id";
+            this.dataGridViewTextBoxColumn72.HeaderText = "category_id";
+            this.dataGridViewTextBoxColumn72.Name = "dataGridViewTextBoxColumn72";
+            // 
+            // dataGridViewTextBoxColumn73
+            // 
+            this.dataGridViewTextBoxColumn73.DataPropertyName = "Driver_id";
+            this.dataGridViewTextBoxColumn73.HeaderText = "Driver_id";
+            this.dataGridViewTextBoxColumn73.Name = "dataGridViewTextBoxColumn73";
+            // 
+            // dataGridViewTextBoxColumn74
+            // 
+            this.dataGridViewTextBoxColumn74.DataPropertyName = "years";
+            this.dataGridViewTextBoxColumn74.HeaderText = "years";
+            this.dataGridViewTextBoxColumn74.Name = "dataGridViewTextBoxColumn74";
+            // 
+            // dataGridViewTextBoxColumn75
+            // 
+            this.dataGridViewTextBoxColumn75.DataPropertyName = "price";
+            this.dataGridViewTextBoxColumn75.HeaderText = "price";
+            this.dataGridViewTextBoxColumn75.Name = "dataGridViewTextBoxColumn75";
+            // 
+            // dataGridViewTextBoxColumn76
+            // 
+            this.dataGridViewTextBoxColumn76.DataPropertyName = "title";
+            this.dataGridViewTextBoxColumn76.HeaderText = "title";
+            this.dataGridViewTextBoxColumn76.Name = "dataGridViewTextBoxColumn76";
+            // 
+            // dataGridViewTextBoxColumn77
+            // 
+            this.dataGridViewTextBoxColumn77.DataPropertyName = "location";
+            this.dataGridViewTextBoxColumn77.HeaderText = "location";
+            this.dataGridViewTextBoxColumn77.Name = "dataGridViewTextBoxColumn77";
+            // 
+            // dataGridViewTextBoxColumn78
+            // 
+            this.dataGridViewTextBoxColumn78.DataPropertyName = "country";
+            this.dataGridViewTextBoxColumn78.HeaderText = "country";
+            this.dataGridViewTextBoxColumn78.Name = "dataGridViewTextBoxColumn78";
+            // 
+            // dataGridViewTextBoxColumn79
+            // 
+            this.dataGridViewTextBoxColumn79.DataPropertyName = "condition";
+            this.dataGridViewTextBoxColumn79.HeaderText = "condition";
+            this.dataGridViewTextBoxColumn79.Name = "dataGridViewTextBoxColumn79";
+            // 
+            // dataGridViewTextBoxColumn80
+            // 
+            this.dataGridViewTextBoxColumn80.DataPropertyName = "Payment_Method";
+            this.dataGridViewTextBoxColumn80.HeaderText = "Payment_Method";
+            this.dataGridViewTextBoxColumn80.Name = "dataGridViewTextBoxColumn80";
+            // 
+            // machinesBindingSource6
+            // 
+            this.machinesBindingSource6.DataMember = "Machines";
+            this.machinesBindingSource6.DataSource = this.machine_key_search_DataSet;
+            // 
+            // machine_key_search_DataSet
+            // 
+            this.machine_key_search_DataSet.DataSetName = "machine_key_search_DataSet";
+            this.machine_key_search_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // category_search_tabPage
+            // 
+            this.category_search_tabPage.Controls.Add(this.dataGridView1);
+            this.category_search_tabPage.Controls.Add(this.vehical_catigory_search);
+            this.category_search_tabPage.Controls.Add(this.comboBox13);
+            this.category_search_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.category_search_tabPage.Name = "category_search_tabPage";
+            this.category_search_tabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.category_search_tabPage.Size = new System.Drawing.Size(781, 395);
+            this.category_search_tabPage.TabIndex = 2;
+            this.category_search_tabPage.Text = "category_search";
+            this.category_search_tabPage.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.machineidDataGridViewTextBoxColumn,
+            this.Driver_id,
+            this.category_id,
+            this.price,
+            this.condition,
+            this.country,
+            this.location,
+            this.Payment_Method,
+            this.title});
+            this.dataGridView1.DataSource = this.fKMachinescatego2D27B809BindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 42);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(762, 338);
+            this.dataGridView1.TabIndex = 4;
+            // 
+            // machineidDataGridViewTextBoxColumn
+            // 
+            this.machineidDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.machineidDataGridViewTextBoxColumn.DataPropertyName = "Machine_id";
+            this.machineidDataGridViewTextBoxColumn.HeaderText = "Machine_id";
+            this.machineidDataGridViewTextBoxColumn.Name = "machineidDataGridViewTextBoxColumn";
+            this.machineidDataGridViewTextBoxColumn.Width = 85;
+            // 
+            // Driver_id
+            // 
+            this.Driver_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Driver_id.DataPropertyName = "Driver_id";
+            this.Driver_id.HeaderText = "Driver_id";
+            this.Driver_id.Name = "Driver_id";
+            this.Driver_id.Width = 75;
+            // 
+            // category_id
+            // 
+            this.category_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.category_id.DataPropertyName = "category_id";
+            this.category_id.HeaderText = "category_id";
+            this.category_id.Name = "category_id";
+            this.category_id.Width = 85;
+            // 
+            // price
+            // 
+            this.price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.price.DataPropertyName = "price";
+            this.price.HeaderText = "price";
+            this.price.Name = "price";
+            this.price.Width = 53;
+            // 
+            // condition
+            // 
+            this.condition.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.condition.DataPropertyName = "condition";
+            this.condition.HeaderText = "condition";
+            this.condition.Name = "condition";
+            this.condition.Width = 74;
+            // 
+            // country
+            // 
+            this.country.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.country.DataPropertyName = "country";
+            this.country.HeaderText = "country";
+            this.country.Name = "country";
+            this.country.Width = 66;
+            // 
+            // location
+            // 
+            this.location.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.location.DataPropertyName = "location";
+            this.location.HeaderText = "location";
+            this.location.Name = "location";
+            this.location.Width = 67;
+            // 
+            // Payment_Method
+            // 
+            this.Payment_Method.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Payment_Method.DataPropertyName = "Payment_Method";
+            this.Payment_Method.HeaderText = "Payment_Method";
+            this.Payment_Method.Name = "Payment_Method";
+            this.Payment_Method.Width = 112;
+            // 
+            // title
+            // 
+            this.title.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.title.DataPropertyName = "title";
+            this.title.HeaderText = "title";
+            this.title.Name = "title";
+            this.title.Width = 47;
+            // 
+            // fKMachinescatego2D27B809BindingSource
+            // 
+            this.fKMachinescatego2D27B809BindingSource.DataMember = "FK__Machines__catego__2D27B809";
+            this.fKMachinescatego2D27B809BindingSource.DataSource = this.categoriesBindingSource;
+            // 
+            // categoriesBindingSource
+            // 
+            this.categoriesBindingSource.DataMember = "Categories";
+            this.categoriesBindingSource.DataSource = this.machine_category_DataSet;
+            // 
+            // machine_category_DataSet
+            // 
+            this.machine_category_DataSet.DataSetName = "machine_category_DataSet";
+            this.machine_category_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // vehical_catigory_search
+            // 
+            this.vehical_catigory_search.AutoSize = true;
+            this.vehical_catigory_search.Location = new System.Drawing.Point(31, 14);
+            this.vehical_catigory_search.Name = "vehical_catigory_search";
+            this.vehical_catigory_search.Size = new System.Drawing.Size(88, 12);
+            this.vehical_catigory_search.TabIndex = 3;
+            this.vehical_catigory_search.Text = "Category Search :";
+            // 
+            // comboBox13
+            // 
+            this.comboBox13.DataSource = this.categoriesBindingSource;
+            this.comboBox13.DisplayMember = "description";
+            this.comboBox13.FormattingEnabled = true;
+            this.comboBox13.Location = new System.Drawing.Point(125, 11);
+            this.comboBox13.Name = "comboBox13";
+            this.comboBox13.Size = new System.Drawing.Size(569, 20);
+            this.comboBox13.TabIndex = 0;
+            this.comboBox13.ValueMember = "category_id";
+            // 
+            // driver_search_tabPage10
+            // 
+            this.driver_search_tabPage10.Controls.Add(this.vehical_driver_search);
+            this.driver_search_tabPage10.Controls.Add(this.dataGridView2);
+            this.driver_search_tabPage10.Controls.Add(this.comboBox14);
+            this.driver_search_tabPage10.Location = new System.Drawing.Point(4, 22);
+            this.driver_search_tabPage10.Name = "driver_search_tabPage10";
+            this.driver_search_tabPage10.Padding = new System.Windows.Forms.Padding(3);
+            this.driver_search_tabPage10.Size = new System.Drawing.Size(781, 395);
+            this.driver_search_tabPage10.TabIndex = 3;
+            this.driver_search_tabPage10.Text = "driver_search";
+            this.driver_search_tabPage10.UseVisualStyleBackColor = true;
+            // 
+            // vehical_driver_search
+            // 
+            this.vehical_driver_search.AutoSize = true;
+            this.vehical_driver_search.Location = new System.Drawing.Point(47, 14);
+            this.vehical_driver_search.Name = "vehical_driver_search";
+            this.vehical_driver_search.Size = new System.Drawing.Size(75, 12);
+            this.vehical_driver_search.TabIndex = 3;
+            this.vehical_driver_search.Text = "Driver Search :";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.machineidDataGridViewTextBoxColumn1,
+            this.driveridDataGridViewTextBoxColumn,
+            this.yearsDataGridViewTextBoxColumn,
+            this.priceDataGridViewTextBoxColumn1,
+            this.titleDataGridViewTextBoxColumn,
+            this.locationDataGridViewTextBoxColumn,
+            this.countryDataGridViewTextBoxColumn,
+            this.conditionDataGridViewTextBoxColumn,
+            this.paymentMethodDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.fKMachinesDriver2E1BDC42BindingSource;
+            this.dataGridView2.Location = new System.Drawing.Point(1, 37);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(763, 344);
+            this.dataGridView2.TabIndex = 1;
+            // 
+            // machineidDataGridViewTextBoxColumn1
+            // 
+            this.machineidDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.machineidDataGridViewTextBoxColumn1.DataPropertyName = "Machine_id";
+            this.machineidDataGridViewTextBoxColumn1.HeaderText = "Machine_id";
+            this.machineidDataGridViewTextBoxColumn1.Name = "machineidDataGridViewTextBoxColumn1";
+            this.machineidDataGridViewTextBoxColumn1.Width = 85;
+            // 
+            // driveridDataGridViewTextBoxColumn
+            // 
+            this.driveridDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.driveridDataGridViewTextBoxColumn.DataPropertyName = "Driver_id";
+            this.driveridDataGridViewTextBoxColumn.HeaderText = "Driver_id";
+            this.driveridDataGridViewTextBoxColumn.Name = "driveridDataGridViewTextBoxColumn";
+            this.driveridDataGridViewTextBoxColumn.Width = 75;
+            // 
+            // yearsDataGridViewTextBoxColumn
+            // 
+            this.yearsDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.yearsDataGridViewTextBoxColumn.DataPropertyName = "years";
+            this.yearsDataGridViewTextBoxColumn.HeaderText = "years";
+            this.yearsDataGridViewTextBoxColumn.Name = "yearsDataGridViewTextBoxColumn";
+            this.yearsDataGridViewTextBoxColumn.Width = 54;
+            // 
+            // priceDataGridViewTextBoxColumn1
+            // 
+            this.priceDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.priceDataGridViewTextBoxColumn1.DataPropertyName = "price";
+            this.priceDataGridViewTextBoxColumn1.HeaderText = "price";
+            this.priceDataGridViewTextBoxColumn1.Name = "priceDataGridViewTextBoxColumn1";
+            this.priceDataGridViewTextBoxColumn1.Width = 53;
+            // 
+            // titleDataGridViewTextBoxColumn
+            // 
+            this.titleDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.titleDataGridViewTextBoxColumn.DataPropertyName = "title";
+            this.titleDataGridViewTextBoxColumn.HeaderText = "title";
+            this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
+            this.titleDataGridViewTextBoxColumn.Width = 47;
+            // 
+            // locationDataGridViewTextBoxColumn
+            // 
+            this.locationDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.locationDataGridViewTextBoxColumn.DataPropertyName = "location";
+            this.locationDataGridViewTextBoxColumn.HeaderText = "location";
+            this.locationDataGridViewTextBoxColumn.Name = "locationDataGridViewTextBoxColumn";
+            this.locationDataGridViewTextBoxColumn.Width = 67;
+            // 
+            // countryDataGridViewTextBoxColumn
+            // 
+            this.countryDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.countryDataGridViewTextBoxColumn.DataPropertyName = "country";
+            this.countryDataGridViewTextBoxColumn.HeaderText = "country";
+            this.countryDataGridViewTextBoxColumn.Name = "countryDataGridViewTextBoxColumn";
+            this.countryDataGridViewTextBoxColumn.Width = 66;
+            // 
+            // conditionDataGridViewTextBoxColumn
+            // 
+            this.conditionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.conditionDataGridViewTextBoxColumn.DataPropertyName = "condition";
+            this.conditionDataGridViewTextBoxColumn.HeaderText = "condition";
+            this.conditionDataGridViewTextBoxColumn.Name = "conditionDataGridViewTextBoxColumn";
+            this.conditionDataGridViewTextBoxColumn.Width = 74;
+            // 
+            // paymentMethodDataGridViewTextBoxColumn
+            // 
+            this.paymentMethodDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.paymentMethodDataGridViewTextBoxColumn.DataPropertyName = "Payment_Method";
+            this.paymentMethodDataGridViewTextBoxColumn.HeaderText = "Payment_Method";
+            this.paymentMethodDataGridViewTextBoxColumn.Name = "paymentMethodDataGridViewTextBoxColumn";
+            this.paymentMethodDataGridViewTextBoxColumn.Width = 112;
+            // 
+            // fKMachinesDriver2E1BDC42BindingSource
+            // 
+            this.fKMachinesDriver2E1BDC42BindingSource.DataMember = "FK__Machines__Driver__2E1BDC42";
+            this.fKMachinesDriver2E1BDC42BindingSource.DataSource = this.driverBindingSource;
+            // 
+            // driverBindingSource
+            // 
+            this.driverBindingSource.DataMember = "Driver";
+            this.driverBindingSource.DataSource = this.machine_driver_DataSet;
+            // 
+            // machine_driver_DataSet
+            // 
+            this.machine_driver_DataSet.DataSetName = "machine_driver_DataSet";
+            this.machine_driver_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // comboBox14
+            // 
+            this.comboBox14.DataSource = this.driverBindingSource1;
+            this.comboBox14.DisplayMember = "first_name";
+            this.comboBox14.FormattingEnabled = true;
+            this.comboBox14.Location = new System.Drawing.Point(128, 11);
+            this.comboBox14.Name = "comboBox14";
+            this.comboBox14.Size = new System.Drawing.Size(569, 20);
+            this.comboBox14.TabIndex = 0;
+            this.comboBox14.ValueMember = "Driver_id";
+            // 
+            // driverBindingSource1
+            // 
+            this.driverBindingSource1.DataMember = "Driver";
+            this.driverBindingSource1.DataSource = this.machine_driver_DataSet;
+            // 
+            // tabPage10
+            // 
+            this.tabPage10.AutoScroll = true;
+            this.tabPage10.Controls.Add(this.fillToolStrip);
+            this.tabPage10.Controls.Add(this.listBox1);
+            this.tabPage10.Controls.Add(machine_idLabel);
+            this.tabPage10.Controls.Add(this.machine_idTextBox);
+            this.tabPage10.Controls.Add(category_idLabel);
+            this.tabPage10.Controls.Add(this.category_idTextBox);
+            this.tabPage10.Controls.Add(driver_idLabel);
+            this.tabPage10.Controls.Add(this.driver_idTextBox);
+            this.tabPage10.Controls.Add(yearsLabel);
+            this.tabPage10.Controls.Add(this.yearsTextBox);
+            this.tabPage10.Controls.Add(priceLabel1);
+            this.tabPage10.Controls.Add(this.priceTextBox);
+            this.tabPage10.Controls.Add(titleLabel1);
+            this.tabPage10.Controls.Add(this.titleTextBox);
+            this.tabPage10.Controls.Add(locationLabel1);
+            this.tabPage10.Controls.Add(this.locationTextBox);
+            this.tabPage10.Controls.Add(countryLabel);
+            this.tabPage10.Controls.Add(this.countryTextBox);
+            this.tabPage10.Controls.Add(conditionLabel);
+            this.tabPage10.Controls.Add(this.conditionTextBox);
+            this.tabPage10.Controls.Add(payment_MethodLabel);
+            this.tabPage10.Controls.Add(this.payment_MethodTextBox);
+            this.tabPage10.Location = new System.Drawing.Point(4, 22);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage10.Size = new System.Drawing.Size(781, 395);
+            this.tabPage10.TabIndex = 4;
+            this.tabPage10.Text = "location_search";
+            this.tabPage10.UseVisualStyleBackColor = true;
             // 
             // service
             // 
@@ -800,7 +1643,7 @@ namespace hw5v3
             // 
             // bindingNavigator2
             // 
-            this.bindingNavigator2.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.bindingNavigator2.AddNewItem = null;
             this.bindingNavigator2.BindingSource = this.ordersBindingSource;
             this.bindingNavigator2.CountItem = this.bindingNavigatorCountItem2;
             this.bindingNavigator2.DeleteItem = this.bindingNavigatorDeleteItem2;
@@ -1767,6 +2610,24 @@ namespace hw5v3
             this.tabPage7.Text = "Add Orders";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
+            // lastest_Order_idTextBox
+            // 
+            this.lastest_Order_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.latest_orderBindingSource, "lastest_Order_id", true));
+            this.lastest_Order_idTextBox.Location = new System.Drawing.Point(492, 86);
+            this.lastest_Order_idTextBox.Name = "lastest_Order_idTextBox";
+            this.lastest_Order_idTextBox.Size = new System.Drawing.Size(100, 22);
+            this.lastest_Order_idTextBox.TabIndex = 21;
+            // 
+            // latest_orderBindingSource
+            // 
+            this.latest_orderBindingSource.DataMember = "Latest order";
+            this.latest_orderBindingSource.DataSource = this.businessDataSet_Tim5;
+            // 
+            // businessDataSet_Tim5
+            // 
+            this.businessDataSet_Tim5.DataSetName = "BusinessDataSet_Tim5";
+            this.businessDataSet_Tim5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // comboBox5
             // 
             this.comboBox5.DataSource = this.nameBindingSource9;
@@ -1782,11 +2643,6 @@ namespace hw5v3
             // 
             this.nameBindingSource9.DataMember = "Name";
             this.nameBindingSource9.DataSource = this.businessDataSet_Tim5;
-            // 
-            // businessDataSet_Tim5
-            // 
-            this.businessDataSet_Tim5.DataSetName = "BusinessDataSet_Tim5";
-            this.businessDataSet_Tim5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // comboBox7
             // 
@@ -1846,16 +2702,6 @@ namespace hw5v3
             // 
             this.machinesBindingSource4.DataMember = "Machines";
             this.machinesBindingSource4.DataSource = this.businessDataSet_Tim5;
-            // 
-            // ordersBindingSource1
-            // 
-            this.ordersBindingSource1.DataMember = "Orders";
-            this.ordersBindingSource1.DataSource = this.businessDataSet_Tim5;
-            // 
-            // ordersBindingSource2
-            // 
-            this.ordersBindingSource2.DataMember = "Orders";
-            this.ordersBindingSource2.DataSource = this.businessDataSet_Tim5;
             // 
             // button4
             // 
@@ -1967,6 +2813,11 @@ namespace hw5v3
             this.dataGridViewTextBoxColumn45.DataPropertyName = "status";
             this.dataGridViewTextBoxColumn45.HeaderText = "status";
             this.dataGridViewTextBoxColumn45.Name = "dataGridViewTextBoxColumn45";
+            // 
+            // ordersBindingSource1
+            // 
+            this.ordersBindingSource1.DataMember = "Orders";
+            this.ordersBindingSource1.DataSource = this.businessDataSet_Tim5;
             // 
             // label11
             // 
@@ -2406,6 +3257,11 @@ namespace hw5v3
             this.driver.Text = "driver";
             this.driver.UseVisualStyleBackColor = true;
             // 
+            // ordersBindingSource2
+            // 
+            this.ordersBindingSource2.DataMember = "Orders";
+            this.ordersBindingSource2.DataSource = this.businessDataSet_Tim5;
+            // 
             // nameBindingSource7
             // 
             this.nameBindingSource7.DataMember = "Name";
@@ -2645,31 +3501,338 @@ namespace hw5v3
             this.nameBindingSource10.DataMember = "Name";
             this.nameBindingSource10.DataSource = this.businessDataSet_Tim5;
             // 
-            // latest_orderBindingSource
-            // 
-            this.latest_orderBindingSource.DataMember = "Latest order";
-            this.latest_orderBindingSource.DataSource = this.businessDataSet_Tim5;
-            // 
             // latest_orderTableAdapter
             // 
             this.latest_orderTableAdapter.ClearBeforeFill = true;
             // 
-            // lastest_Order_idLabel
+            // machinesTableAdapter3
             // 
-            lastest_Order_idLabel.AutoSize = true;
-            lastest_Order_idLabel.Location = new System.Drawing.Point(409, 89);
-            lastest_Order_idLabel.Name = "lastest_Order_idLabel";
-            lastest_Order_idLabel.Size = new System.Drawing.Size(77, 12);
-            lastest_Order_idLabel.TabIndex = 20;
-            lastest_Order_idLabel.Text = "lastest Order id:";
+            this.machinesTableAdapter3.ClearBeforeFill = true;
             // 
-            // lastest_Order_idTextBox
+            // tableAdapterManager4
             // 
-            this.lastest_Order_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.latest_orderBindingSource, "lastest_Order_id", true));
-            this.lastest_Order_idTextBox.Location = new System.Drawing.Point(492, 86);
-            this.lastest_Order_idTextBox.Name = "lastest_Order_idTextBox";
-            this.lastest_Order_idTextBox.Size = new System.Drawing.Size(100, 22);
-            this.lastest_Order_idTextBox.TabIndex = 21;
+            this.tableAdapterManager4.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager4.MachinesTableAdapter = this.machinesTableAdapter3;
+            this.tableAdapterManager4.UpdateOrder = hw5v3.machineDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // fKOrdersMachine34C8D9D1BindingSource
+            // 
+            this.fKOrdersMachine34C8D9D1BindingSource.DataMember = "FK__Orders__Machine___34C8D9D1";
+            this.fKOrdersMachine34C8D9D1BindingSource.DataSource = this.machinesBindingSource4;
+            // 
+            // categoriesTableAdapter
+            // 
+            this.categoriesTableAdapter.ClearBeforeFill = true;
+            // 
+            // fKOrdersMachine34C8D9D1BindingSource1
+            // 
+            this.fKOrdersMachine34C8D9D1BindingSource1.DataMember = "FK__Orders__Machine___34C8D9D1";
+            this.fKOrdersMachine34C8D9D1BindingSource1.DataSource = this.machinesBindingSource4;
+            // 
+            // driverTableAdapter
+            // 
+            this.driverTableAdapter.ClearBeforeFill = true;
+            // 
+            // machinesTableAdapter4
+            // 
+            this.machinesTableAdapter4.ClearBeforeFill = true;
+            // 
+            // machinesTableAdapter5
+            // 
+            this.machinesTableAdapter5.ClearBeforeFill = true;
+            // 
+            // machinesTableAdapter6
+            // 
+            this.machinesTableAdapter6.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager5
+            // 
+            this.tableAdapterManager5.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager5.UpdateOrder = hw5v3.machine_key_search_DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // fillByToolStrip
+            // 
+            this.fillByToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.keywordToolStripLabel,
+            this.keywordToolStripTextBox,
+            this.fillByToolStripButton});
+            this.fillByToolStrip.Location = new System.Drawing.Point(3, 3);
+            this.fillByToolStrip.Name = "fillByToolStrip";
+            this.fillByToolStrip.Size = new System.Drawing.Size(775, 25);
+            this.fillByToolStrip.TabIndex = 1;
+            this.fillByToolStrip.Text = "fillByToolStrip";
+            // 
+            // keywordToolStripLabel
+            // 
+            this.keywordToolStripLabel.Name = "keywordToolStripLabel";
+            this.keywordToolStripLabel.Size = new System.Drawing.Size(58, 22);
+            this.keywordToolStripLabel.Text = "keyword:";
+            // 
+            // keywordToolStripTextBox
+            // 
+            this.keywordToolStripTextBox.Name = "keywordToolStripTextBox";
+            this.keywordToolStripTextBox.Size = new System.Drawing.Size(100, 25);
+            // 
+            // fillByToolStripButton
+            // 
+            this.fillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillByToolStripButton.Name = "fillByToolStripButton";
+            this.fillByToolStripButton.Size = new System.Drawing.Size(47, 22);
+            this.fillByToolStripButton.Text = "search";
+            this.fillByToolStripButton.Click += new System.EventHandler(this.fillByToolStripButton_Click);
+            // 
+            // mation_location_DataSet_detail
+            // 
+            this.mation_location_DataSet_detail.DataSetName = "mation_location_DataSet_detail";
+            this.mation_location_DataSet_detail.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // machinesBindingSource7
+            // 
+            this.machinesBindingSource7.DataMember = "Machines";
+            this.machinesBindingSource7.DataSource = this.mation_location_DataSet_detail;
+            // 
+            // machinesTableAdapter7
+            // 
+            this.machinesTableAdapter7.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager6
+            // 
+            this.tableAdapterManager6.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager6.MachinesTableAdapter = this.machinesTableAdapter7;
+            this.tableAdapterManager6.UpdateOrder = hw5v3.mation_location_DataSet_detailTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // fillToolStrip
+            // 
+            this.fillToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.machine_idToolStripLabel,
+            this.machine_idToolStripTextBox,
+            this.fillToolStripButton});
+            this.fillToolStrip.Location = new System.Drawing.Point(3, 3);
+            this.fillToolStrip.Name = "fillToolStrip";
+            this.fillToolStrip.Size = new System.Drawing.Size(775, 25);
+            this.fillToolStrip.TabIndex = 1;
+            this.fillToolStrip.Text = "fillToolStrip";
+            // 
+            // machine_idToolStripLabel
+            // 
+            this.machine_idToolStripLabel.Name = "machine_idToolStripLabel";
+            this.machine_idToolStripLabel.Size = new System.Drawing.Size(75, 22);
+            this.machine_idToolStripLabel.Text = "Machine_id:";
+            // 
+            // machine_idToolStripTextBox
+            // 
+            this.machine_idToolStripTextBox.Name = "machine_idToolStripTextBox";
+            this.machine_idToolStripTextBox.Size = new System.Drawing.Size(100, 23);
+            // 
+            // fillToolStripButton
+            // 
+            this.fillToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillToolStripButton.Name = "fillToolStripButton";
+            this.fillToolStripButton.Size = new System.Drawing.Size(47, 22);
+            this.fillToolStripButton.Text = "search";
+            this.fillToolStripButton.Click += new System.EventHandler(this.fillToolStripButton_Click);
+            // 
+            // machine_idLabel
+            // 
+            machine_idLabel.AutoSize = true;
+            machine_idLabel.Location = new System.Drawing.Point(255, 59);
+            machine_idLabel.Name = "machine_idLabel";
+            machine_idLabel.Size = new System.Drawing.Size(60, 12);
+            machine_idLabel.TabIndex = 0;
+            machine_idLabel.Text = "Machine id:";
+            // 
+            // machine_idTextBox
+            // 
+            this.machine_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "Machine_id", true));
+            this.machine_idTextBox.Location = new System.Drawing.Point(348, 56);
+            this.machine_idTextBox.Name = "machine_idTextBox";
+            this.machine_idTextBox.Size = new System.Drawing.Size(367, 22);
+            this.machine_idTextBox.TabIndex = 1;
+            // 
+            // category_idLabel
+            // 
+            category_idLabel.AutoSize = true;
+            category_idLabel.Location = new System.Drawing.Point(255, 87);
+            category_idLabel.Name = "category_idLabel";
+            category_idLabel.Size = new System.Drawing.Size(60, 12);
+            category_idLabel.TabIndex = 2;
+            category_idLabel.Text = "category id:";
+            // 
+            // category_idTextBox
+            // 
+            this.category_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "category_id", true));
+            this.category_idTextBox.Location = new System.Drawing.Point(348, 84);
+            this.category_idTextBox.Name = "category_idTextBox";
+            this.category_idTextBox.Size = new System.Drawing.Size(367, 22);
+            this.category_idTextBox.TabIndex = 3;
+            // 
+            // driver_idLabel
+            // 
+            driver_idLabel.AutoSize = true;
+            driver_idLabel.Location = new System.Drawing.Point(255, 115);
+            driver_idLabel.Name = "driver_idLabel";
+            driver_idLabel.Size = new System.Drawing.Size(50, 12);
+            driver_idLabel.TabIndex = 4;
+            driver_idLabel.Text = "Driver id:";
+            // 
+            // driver_idTextBox
+            // 
+            this.driver_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "Driver_id", true));
+            this.driver_idTextBox.Location = new System.Drawing.Point(348, 112);
+            this.driver_idTextBox.Name = "driver_idTextBox";
+            this.driver_idTextBox.Size = new System.Drawing.Size(367, 22);
+            this.driver_idTextBox.TabIndex = 5;
+            // 
+            // yearsLabel
+            // 
+            yearsLabel.AutoSize = true;
+            yearsLabel.Location = new System.Drawing.Point(255, 143);
+            yearsLabel.Name = "yearsLabel";
+            yearsLabel.Size = new System.Drawing.Size(32, 12);
+            yearsLabel.TabIndex = 6;
+            yearsLabel.Text = "years:";
+            // 
+            // yearsTextBox
+            // 
+            this.yearsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "years", true));
+            this.yearsTextBox.Location = new System.Drawing.Point(348, 140);
+            this.yearsTextBox.Name = "yearsTextBox";
+            this.yearsTextBox.Size = new System.Drawing.Size(367, 22);
+            this.yearsTextBox.TabIndex = 7;
+            // 
+            // priceLabel1
+            // 
+            priceLabel1.AutoSize = true;
+            priceLabel1.Location = new System.Drawing.Point(255, 171);
+            priceLabel1.Name = "priceLabel1";
+            priceLabel1.Size = new System.Drawing.Size(31, 12);
+            priceLabel1.TabIndex = 8;
+            priceLabel1.Text = "price:";
+            // 
+            // priceTextBox
+            // 
+            this.priceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "price", true));
+            this.priceTextBox.Location = new System.Drawing.Point(348, 168);
+            this.priceTextBox.Name = "priceTextBox";
+            this.priceTextBox.Size = new System.Drawing.Size(367, 22);
+            this.priceTextBox.TabIndex = 9;
+            // 
+            // titleLabel1
+            // 
+            titleLabel1.AutoSize = true;
+            titleLabel1.Location = new System.Drawing.Point(255, 199);
+            titleLabel1.Name = "titleLabel1";
+            titleLabel1.Size = new System.Drawing.Size(25, 12);
+            titleLabel1.TabIndex = 10;
+            titleLabel1.Text = "title:";
+            // 
+            // titleTextBox
+            // 
+            this.titleTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "title", true));
+            this.titleTextBox.Location = new System.Drawing.Point(348, 196);
+            this.titleTextBox.Name = "titleTextBox";
+            this.titleTextBox.Size = new System.Drawing.Size(367, 22);
+            this.titleTextBox.TabIndex = 11;
+            // 
+            // locationLabel1
+            // 
+            locationLabel1.AutoSize = true;
+            locationLabel1.Location = new System.Drawing.Point(255, 227);
+            locationLabel1.Name = "locationLabel1";
+            locationLabel1.Size = new System.Drawing.Size(45, 12);
+            locationLabel1.TabIndex = 12;
+            locationLabel1.Text = "location:";
+            // 
+            // locationTextBox
+            // 
+            this.locationTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "location", true));
+            this.locationTextBox.Location = new System.Drawing.Point(348, 224);
+            this.locationTextBox.Name = "locationTextBox";
+            this.locationTextBox.Size = new System.Drawing.Size(367, 22);
+            this.locationTextBox.TabIndex = 13;
+            // 
+            // countryLabel
+            // 
+            countryLabel.AutoSize = true;
+            countryLabel.Location = new System.Drawing.Point(255, 255);
+            countryLabel.Name = "countryLabel";
+            countryLabel.Size = new System.Drawing.Size(44, 12);
+            countryLabel.TabIndex = 14;
+            countryLabel.Text = "country:";
+            // 
+            // countryTextBox
+            // 
+            this.countryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "country", true));
+            this.countryTextBox.Location = new System.Drawing.Point(348, 252);
+            this.countryTextBox.Name = "countryTextBox";
+            this.countryTextBox.Size = new System.Drawing.Size(367, 22);
+            this.countryTextBox.TabIndex = 15;
+            // 
+            // conditionLabel
+            // 
+            conditionLabel.AutoSize = true;
+            conditionLabel.Location = new System.Drawing.Point(255, 283);
+            conditionLabel.Name = "conditionLabel";
+            conditionLabel.Size = new System.Drawing.Size(52, 12);
+            conditionLabel.TabIndex = 16;
+            conditionLabel.Text = "condition:";
+            // 
+            // conditionTextBox
+            // 
+            this.conditionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "condition", true));
+            this.conditionTextBox.Location = new System.Drawing.Point(348, 280);
+            this.conditionTextBox.Name = "conditionTextBox";
+            this.conditionTextBox.Size = new System.Drawing.Size(367, 22);
+            this.conditionTextBox.TabIndex = 17;
+            // 
+            // payment_MethodLabel
+            // 
+            payment_MethodLabel.AutoSize = true;
+            payment_MethodLabel.Location = new System.Drawing.Point(255, 311);
+            payment_MethodLabel.Name = "payment_MethodLabel";
+            payment_MethodLabel.Size = new System.Drawing.Size(87, 12);
+            payment_MethodLabel.TabIndex = 18;
+            payment_MethodLabel.Text = "Payment Method:";
+            // 
+            // payment_MethodTextBox
+            // 
+            this.payment_MethodTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "Payment_Method", true));
+            this.payment_MethodTextBox.Location = new System.Drawing.Point(348, 308);
+            this.payment_MethodTextBox.Name = "payment_MethodTextBox";
+            this.payment_MethodTextBox.Size = new System.Drawing.Size(367, 22);
+            this.payment_MethodTextBox.TabIndex = 19;
+            // 
+            // listBox1
+            // 
+            this.listBox1.DataSource = this.machinesBindingSource8;
+            this.listBox1.DisplayMember = "location";
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 12;
+            this.listBox1.Location = new System.Drawing.Point(34, 56);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(187, 268);
+            this.listBox1.TabIndex = 20;
+            this.listBox1.ValueMember = "Machine_id";
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // machine_location_DataSet
+            // 
+            this.machine_location_DataSet.DataSetName = "machine_location_DataSet";
+            this.machine_location_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // machinelocationDataSetBindingSource
+            // 
+            this.machinelocationDataSetBindingSource.DataSource = this.machine_location_DataSet;
+            this.machinelocationDataSetBindingSource.Position = 0;
+            // 
+            // machinesBindingSource8
+            // 
+            this.machinesBindingSource8.DataMember = "Machines";
+            this.machinesBindingSource8.DataSource = this.machine_location_DataSet;
+            // 
+            // machinesTableAdapter8
+            // 
+            this.machinesTableAdapter8.ClearBeforeFill = true;
             // 
             // Form1
             // 
@@ -2681,6 +3844,36 @@ namespace hw5v3
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
+            this.vehical.ResumeLayout(false);
+            this.vehical_tabControl.ResumeLayout(false);
+            this.add_change_remove.ResumeLayout(false);
+            this.add_change_remove.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator3)).EndInit();
+            this.bindingNavigator3.ResumeLayout(false);
+            this.bindingNavigator3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machineDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machinesDataGridView)).EndInit();
+            this.key_search_tabPage11.ResumeLayout(false);
+            this.key_search_tabPage11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.machinesDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machine_key_search_DataSet)).EndInit();
+            this.category_search_tabPage.ResumeLayout(false);
+            this.category_search_tabPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKMachinescatego2D27B809BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machine_category_DataSet)).EndInit();
+            this.driver_search_tabPage10.ResumeLayout(false);
+            this.driver_search_tabPage10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKMachinesDriver2E1BDC42BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machine_driver_DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverBindingSource1)).EndInit();
+            this.tabPage10.ResumeLayout(false);
+            this.tabPage10.PerformLayout();
             this.service.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -2726,14 +3919,14 @@ namespace hw5v3
             ((System.ComponentModel.ISupportInitialize)(this.businessDataSet_TIM4)).EndInit();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nameBindingSource9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.latest_orderBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.businessDataSet_Tim5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nameBindingSource9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.staffBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nameBindingSource8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersDataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource1)).EndInit();
             this.tabPage8.ResumeLayout(false);
             this.tabPage8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.membershipDataGridView3)).EndInit();
@@ -2748,6 +3941,7 @@ namespace hw5v3
             ((System.ComponentModel.ISupportInitialize)(this.nameBindingSource12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.businessDataSet_Tim52)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nameBindingSource7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.staffBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nameBindingSource6)).EndInit();
@@ -2775,7 +3969,17 @@ namespace hw5v3
             ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.membershipDataTable1BindingSource6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nameBindingSource10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.latest_orderBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKOrdersMachine34C8D9D1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKOrdersMachine34C8D9D1BindingSource1)).EndInit();
+            this.fillByToolStrip.ResumeLayout(false);
+            this.fillByToolStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mation_location_DataSet_detail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource7)).EndInit();
+            this.fillToolStrip.ResumeLayout(false);
+            this.fillToolStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.machine_location_DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machinelocationDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource8)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2814,19 +4018,6 @@ namespace hw5v3
         private System.Windows.Forms.BindingSource nAMEBindingSource1;
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.BindingNavigator membershipBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton membershipBindingNavigatorSaveItem;
         private System.Windows.Forms.DataGridView membershipDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -3048,6 +4239,132 @@ namespace hw5v3
         private System.Windows.Forms.BindingSource latest_orderBindingSource;
         private BusinessDataSet_Tim5TableAdapters.Latest_orderTableAdapter latest_orderTableAdapter;
         private System.Windows.Forms.TextBox lastest_Order_idTextBox;
+        private System.Windows.Forms.TabControl vehical_tabControl;
+        private System.Windows.Forms.TabPage add_change_remove;
+        private System.Windows.Forms.TabPage key_search_tabPage11;
+        private machineDataSet machineDataSet;
+        private System.Windows.Forms.BindingSource machinesBindingSource5;
+        private machineDataSetTableAdapters.MachinesTableAdapter machinesTableAdapter3;
+        private machineDataSetTableAdapters.TableAdapterManager tableAdapterManager4;
+        private System.Windows.Forms.BindingNavigator bindingNavigator3;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripButton toolStripButton5;
+        private System.Windows.Forms.ToolStripButton toolStripButton6;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripButton toolStripButton7;
+        private System.Windows.Forms.DataGridView machinesDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn61;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn62;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn63;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn64;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn65;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn66;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn67;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn68;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn69;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn70;
+        private System.Windows.Forms.BindingNavigator membershipBindingNavigator;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
+        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
+        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
+        private System.Windows.Forms.ToolStripButton membershipBindingNavigatorSaveItem;
+        private System.Windows.Forms.TabPage category_search_tabPage;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource fKOrdersMachine34C8D9D1BindingSource;
+        private System.Windows.Forms.Label vehical_catigory_search;
+        private System.Windows.Forms.ComboBox comboBox13;
+        private System.Windows.Forms.TabPage driver_search_tabPage10;
+        private machine_category_DataSet machine_category_DataSet;
+        private System.Windows.Forms.BindingSource categoriesBindingSource;
+        private machine_category_DataSetTableAdapters.CategoriesTableAdapter categoriesTableAdapter;
+        private System.Windows.Forms.BindingSource fKOrdersMachine34C8D9D1BindingSource1;
+        private System.Windows.Forms.ComboBox comboBox14;
+        private System.Windows.Forms.TabPage tabPage10;
+        private machine_driver_DataSet machine_driver_DataSet;
+        private System.Windows.Forms.BindingSource driverBindingSource;
+        private machine_driver_DataSetTableAdapters.DriverTableAdapter driverTableAdapter;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.BindingSource fKMachinesDriver2E1BDC42BindingSource;
+        private machine_driver_DataSetTableAdapters.MachinesTableAdapter machinesTableAdapter4;
+        private System.Windows.Forms.BindingSource fKMachinescatego2D27B809BindingSource;
+        private machine_category_DataSetTableAdapters.MachinesTableAdapter machinesTableAdapter5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn machineidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Driver_id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn category_id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn condition;
+        private System.Windows.Forms.DataGridViewTextBoxColumn country;
+        private System.Windows.Forms.DataGridViewTextBoxColumn location;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Payment_Method;
+        private System.Windows.Forms.DataGridViewTextBoxColumn title;
+        private System.Windows.Forms.Label vehical_driver_search;
+        private System.Windows.Forms.DataGridViewTextBoxColumn machineidDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn driveridDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn yearsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn titleDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn locationDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn countryDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn conditionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn paymentMethodDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource driverBindingSource1;
+        private machine_key_search_DataSet machine_key_search_DataSet;
+        private System.Windows.Forms.BindingSource machinesBindingSource6;
+        private machine_key_search_DataSetTableAdapters.MachinesTableAdapter machinesTableAdapter6;
+        private machine_key_search_DataSetTableAdapters.TableAdapterManager tableAdapterManager5;
+        private System.Windows.Forms.DataGridView machinesDataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn71;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn72;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn73;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn74;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn75;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn76;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn77;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn78;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn79;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn80;
+        private System.Windows.Forms.ToolStrip fillByToolStrip;
+        private System.Windows.Forms.ToolStripLabel keywordToolStripLabel;
+        private System.Windows.Forms.ToolStripTextBox keywordToolStripTextBox;
+        private System.Windows.Forms.ToolStripButton fillByToolStripButton;
+        private mation_location_DataSet_detail mation_location_DataSet_detail;
+        private System.Windows.Forms.BindingSource machinesBindingSource7;
+        private mation_location_DataSet_detailTableAdapters.MachinesTableAdapter machinesTableAdapter7;
+        private mation_location_DataSet_detailTableAdapters.TableAdapterManager tableAdapterManager6;
+        private System.Windows.Forms.ToolStrip fillToolStrip;
+        private System.Windows.Forms.ToolStripLabel machine_idToolStripLabel;
+        private System.Windows.Forms.ToolStripTextBox machine_idToolStripTextBox;
+        private System.Windows.Forms.ToolStripButton fillToolStripButton;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.BindingSource machinelocationDataSetBindingSource;
+        private machine_location_DataSet machine_location_DataSet;
+        private System.Windows.Forms.TextBox machine_idTextBox;
+        private System.Windows.Forms.TextBox category_idTextBox;
+        private System.Windows.Forms.TextBox driver_idTextBox;
+        private System.Windows.Forms.TextBox yearsTextBox;
+        private System.Windows.Forms.TextBox priceTextBox;
+        private System.Windows.Forms.TextBox titleTextBox;
+        private System.Windows.Forms.TextBox locationTextBox;
+        private System.Windows.Forms.TextBox countryTextBox;
+        private System.Windows.Forms.TextBox conditionTextBox;
+        private System.Windows.Forms.TextBox payment_MethodTextBox;
+        private System.Windows.Forms.BindingSource machinesBindingSource8;
+        private machine_location_DataSetTableAdapters.MachinesTableAdapter machinesTableAdapter8;
     }
 }
 
