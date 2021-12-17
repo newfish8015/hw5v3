@@ -80,6 +80,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BusinessDataSet_Tim5.xsd</DependentUpon>
     </Compile>
+    <Compile Include="driverkeywordDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>driverkeywordDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="driverlistDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>driverlistDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="driversearchDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>driversearchDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="editdrivermachinesDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>editdrivermachinesDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,6 +204,50 @@
     </None>
     <None Include="BusinessDataSet_Tim5.xss">
       <DependentUpon>BusinessDataSet_Tim5.xsd</DependentUpon>
+    </None>
+    <None Include="driverkeywordDataSet.xsc">
+      <DependentUpon>driverkeywordDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="driverkeywordDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>driverkeywordDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="driverkeywordDataSet.xss">
+      <DependentUpon>driverkeywordDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="driverlistDataSet.xsc">
+      <DependentUpon>driverlistDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="driverlistDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>driverlistDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="driverlistDataSet.xss">
+      <DependentUpon>driverlistDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="driversearchDataSet.xsc">
+      <DependentUpon>driversearchDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="driversearchDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>driversearchDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="driversearchDataSet.xss">
+      <DependentUpon>driversearchDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="editdrivermachinesDataSet.xsc">
+      <DependentUpon>editdrivermachinesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="editdrivermachinesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>editdrivermachinesDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="editdrivermachinesDataSet.xss">
+      <DependentUpon>editdrivermachinesDataSet.xsd</DependentUpon>
     </None>
     <None Include="machineDataSet.xsc">
       <DependentUpon>machineDataSet.xsd</DependentUpon>

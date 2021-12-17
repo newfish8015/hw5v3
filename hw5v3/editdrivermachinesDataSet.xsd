@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="editdrivermachinesDataSet" targetNamespace="http://tempuri.org/editdrivermachinesDataSet.xsd" xmlns:mstns="http://tempuri.org/editdrivermachinesDataSet.xsd" xmlns="http://tempuri.org/editdrivermachinesDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BusinessConnectionString_Tim" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BusinessConnectionString_Tim (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.hw5v3.Properties.Settings.GlobalReference.Default.BusinessConnectionString_Tim" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DriverMachinesTableAdapter" GeneratorDataComponentClassName="DriverMachinesTableAdapter" Name="DriverMachines" UserDataComponentName="DriverMachinesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BusinessConnectionString_Tim (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT          Driver.Driver_id, Driver.first_name, Driver.last_name, Machines.category_id, Machines.title, Machines.price, 
+                            Machines.location
+FROM              Driver INNER JOIN
+                            Machines ON Driver.Driver_id = Machines.Driver_id;  </CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Driver_id" DataSetColumn="Driver_id" />
+              <Mapping SourceColumn="first_name" DataSetColumn="first_name" />
+              <Mapping SourceColumn="last_name" DataSetColumn="last_name" />
+              <Mapping SourceColumn="category_id" DataSetColumn="category_id" />
+              <Mapping SourceColumn="title" DataSetColumn="title" />
+              <Mapping SourceColumn="price" DataSetColumn="price" />
+              <Mapping SourceColumn="location" DataSetColumn="location" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DriverdescriptionTableAdapter" GeneratorDataComponentClassName="DriverdescriptionTableAdapter" Name="Driverdescription" UserDataComponentName="DriverdescriptionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BusinessConnectionString_Tim (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT          Driver.Driver_id, Driver.first_name, Driver.last_name, Machines.category_id, Machines.title, Categories.description, 
+                            Machines.price, Machines.location
+FROM              Driver INNER JOIN
+                            Machines ON Driver.Driver_id = Machines.Driver_id INNER JOIN
+                            Categories ON Machines.category_id = Categories.category_id</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Driver_id" DataSetColumn="Driver_id" />
+              <Mapping SourceColumn="first_name" DataSetColumn="first_name" />
+              <Mapping SourceColumn="last_name" DataSetColumn="last_name" />
+              <Mapping SourceColumn="category_id" DataSetColumn="category_id" />
+              <Mapping SourceColumn="title" DataSetColumn="title" />
+              <Mapping SourceColumn="description" DataSetColumn="description" />
+              <Mapping SourceColumn="price" DataSetColumn="price" />
+              <Mapping SourceColumn="location" DataSetColumn="location" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Lastdriver_idTableAdapter" GeneratorDataComponentClassName="Lastdriver_idTableAdapter" Name="Lastdriver_id" UserDataComponentName="Lastdriver_idTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BusinessConnectionString_Tim (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT          IDENT_CURRENT('Driver') AS Driver_id;  </CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Driver_id" DataSetColumn="Driver_id" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="editdrivermachinesDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="editdrivermachinesDataSet" msprop:Generator_UserDSName="editdrivermachinesDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DriverMachines" msprop:Generator_TableClassName="DriverMachinesDataTable" msprop:Generator_TableVarName="tableDriverMachines" msprop:Generator_TablePropName="DriverMachines" msprop:Generator_RowDeletingName="DriverMachinesRowDeleting" msprop:Generator_RowChangingName="DriverMachinesRowChanging" msprop:Generator_RowEvHandlerName="DriverMachinesRowChangeEventHandler" msprop:Generator_RowDeletedName="DriverMachinesRowDeleted" msprop:Generator_UserTableName="DriverMachines" msprop:Generator_RowChangedName="DriverMachinesRowChanged" msprop:Generator_RowEvArgName="DriverMachinesRowChangeEvent" msprop:Generator_RowClassName="DriverMachinesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Driver_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnDriver_id" msprop:Generator_ColumnPropNameInRow="Driver_id" msprop:Generator_ColumnPropNameInTable="Driver_idColumn" msprop:Generator_UserColumnName="Driver_id" type="xs:int" />
+              <xs:element name="first_name" msprop:Generator_ColumnVarNameInTable="columnfirst_name" msprop:Generator_ColumnPropNameInRow="first_name" msprop:Generator_ColumnPropNameInTable="first_nameColumn" msprop:Generator_UserColumnName="first_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="last_name" msprop:Generator_ColumnVarNameInTable="columnlast_name" msprop:Generator_ColumnPropNameInRow="last_name" msprop:Generator_ColumnPropNameInTable="last_nameColumn" msprop:Generator_UserColumnName="last_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="category_id" msprop:Generator_ColumnVarNameInTable="columncategory_id" msprop:Generator_ColumnPropNameInRow="category_id" msprop:Generator_ColumnPropNameInTable="category_idColumn" msprop:Generator_UserColumnName="category_id" type="xs:int" minOccurs="0" />
+              <xs:element name="title" msprop:Generator_ColumnVarNameInTable="columntitle" msprop:Generator_ColumnPropNameInRow="title" msprop:Generator_ColumnPropNameInTable="titleColumn" msprop:Generator_UserColumnName="title" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="price" msprop:Generator_ColumnVarNameInTable="columnprice" msprop:Generator_ColumnPropNameInRow="price" msprop:Generator_ColumnPropNameInTable="priceColumn" msprop:Generator_UserColumnName="price" type="xs:double" minOccurs="0" />
+              <xs:element name="location" msprop:Generator_ColumnVarNameInTable="columnlocation" msprop:Generator_ColumnPropNameInRow="location" msprop:Generator_ColumnPropNameInTable="locationColumn" msprop:Generator_UserColumnName="location" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Driverdescription" msprop:Generator_TableClassName="DriverdescriptionDataTable" msprop:Generator_TableVarName="tableDriverdescription" msprop:Generator_TablePropName="Driverdescription" msprop:Generator_RowDeletingName="DriverdescriptionRowDeleting" msprop:Generator_RowChangingName="DriverdescriptionRowChanging" msprop:Generator_RowEvHandlerName="DriverdescriptionRowChangeEventHandler" msprop:Generator_RowDeletedName="DriverdescriptionRowDeleted" msprop:Generator_UserTableName="Driverdescription" msprop:Generator_RowChangedName="DriverdescriptionRowChanged" msprop:Generator_RowEvArgName="DriverdescriptionRowChangeEvent" msprop:Generator_RowClassName="DriverdescriptionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Driver_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnDriver_id" msprop:Generator_ColumnPropNameInRow="Driver_id" msprop:Generator_ColumnPropNameInTable="Driver_idColumn" msprop:Generator_UserColumnName="Driver_id" type="xs:int" />
+              <xs:element name="first_name" msprop:Generator_ColumnVarNameInTable="columnfirst_name" msprop:Generator_ColumnPropNameInRow="first_name" msprop:Generator_ColumnPropNameInTable="first_nameColumn" msprop:Generator_UserColumnName="first_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="last_name" msprop:Generator_ColumnVarNameInTable="columnlast_name" msprop:Generator_ColumnPropNameInRow="last_name" msprop:Generator_ColumnPropNameInTable="last_nameColumn" msprop:Generator_UserColumnName="last_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="category_id" msprop:Generator_ColumnVarNameInTable="columncategory_id" msprop:Generator_ColumnPropNameInRow="category_id" msprop:Generator_ColumnPropNameInTable="category_idColumn" msprop:Generator_UserColumnName="category_id" type="xs:int" minOccurs="0" />
+              <xs:element name="title" msprop:Generator_ColumnVarNameInTable="columntitle" msprop:Generator_ColumnPropNameInRow="title" msprop:Generator_ColumnPropNameInTable="titleColumn" msprop:Generator_UserColumnName="title" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="description" msprop:Generator_ColumnVarNameInTable="columndescription" msprop:Generator_ColumnPropNameInRow="description" msprop:Generator_ColumnPropNameInTable="descriptionColumn" msprop:Generator_UserColumnName="description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="price" msprop:Generator_ColumnVarNameInTable="columnprice" msprop:Generator_ColumnPropNameInRow="price" msprop:Generator_ColumnPropNameInTable="priceColumn" msprop:Generator_UserColumnName="price" type="xs:double" minOccurs="0" />
+              <xs:element name="location" msprop:Generator_ColumnVarNameInTable="columnlocation" msprop:Generator_ColumnPropNameInRow="location" msprop:Generator_ColumnPropNameInTable="locationColumn" msprop:Generator_UserColumnName="location" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Lastdriver_id" msprop:Generator_TableClassName="Lastdriver_idDataTable" msprop:Generator_TableVarName="tableLastdriver_id" msprop:Generator_TablePropName="Lastdriver_id" msprop:Generator_RowDeletingName="Lastdriver_idRowDeleting" msprop:Generator_RowChangingName="Lastdriver_idRowChanging" msprop:Generator_RowEvHandlerName="Lastdriver_idRowChangeEventHandler" msprop:Generator_RowDeletedName="Lastdriver_idRowDeleted" msprop:Generator_UserTableName="Lastdriver_id" msprop:Generator_RowChangedName="Lastdriver_idRowChanged" msprop:Generator_RowEvArgName="Lastdriver_idRowChangeEvent" msprop:Generator_RowClassName="Lastdriver_idRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Driver_id" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDriver_id" msprop:Generator_ColumnPropNameInRow="Driver_id" msprop:Generator_ColumnPropNameInTable="Driver_idColumn" msprop:Generator_UserColumnName="Driver_id" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DriverMachines" />
+      <xs:field xpath="mstns:Driver_id" />
+    </xs:unique>
+    <xs:unique name="Driverdescription_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Driverdescription" />
+      <xs:field xpath="mstns:Driver_id" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="DriverMachines_Driverdescription" msdata:parent="DriverMachines" msdata:child="Driverdescription" msdata:parentkey="Driver_id" msdata:childkey="Driver_id" msprop:Generator_UserChildTable="Driverdescription" msprop:Generator_ChildPropName="GetDriverdescriptionRows" msprop:Generator_UserRelationName="DriverMachines_Driverdescription" msprop:Generator_ParentPropName="DriverMachinesRow" msprop:Generator_RelationVarName="relationDriverMachines_Driverdescription" msprop:Generator_UserParentTable="DriverMachines" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

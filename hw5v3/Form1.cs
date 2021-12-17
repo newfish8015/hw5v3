@@ -42,6 +42,22 @@ namespace hw5v3
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: 這行程式碼會將資料載入 'editdrivermachinesDataSet.Driverdescription' 資料表。您可以視需要進行移動或移除。
+            this.driverdescriptionTableAdapter.Fill(this.editdrivermachinesDataSet.Driverdescription);
+            // TODO: 這行程式碼會將資料載入 'editdrivermachinesDataSet.Lastdriver_id' 資料表。您可以視需要進行移動或移除。
+            this.lastdriver_idTableAdapter.Fill(this.editdrivermachinesDataSet.Lastdriver_id);
+            // TODO: 這行程式碼會將資料載入 'editdrivermachinesDataSet.DriverMachines' 資料表。您可以視需要進行移動或移除。
+            this.driverMachinesTableAdapter.Fill(this.editdrivermachinesDataSet.DriverMachines);
+            // TODO: 這行程式碼會將資料載入 'driverlistDataSet.Driver' 資料表。您可以視需要進行移動或移除。
+            this.driverTableAdapter3.Fill(this.driverlistDataSet.Driver);
+            // TODO: 這行程式碼會將資料載入 'driversearchDataSet.DataTable1' 資料表。您可以視需要進行移動或移除。
+            this.dataTable1TableAdapter1.Fill(this.driversearchDataSet.DataTable1);
+            // TODO: 這行程式碼會將資料載入 'driversearchDataSet.Driver' 資料表。您可以視需要進行移動或移除。
+            this.driverTableAdapter2.Fill(this.driversearchDataSet.Driver);
+            // TODO: 這行程式碼會將資料載入 'driversearchDataSet.Driver' 資料表。您可以視需要進行移動或移除。
+            this.driverTableAdapter2.Fill(this.driversearchDataSet.Driver);
+            // TODO: 這行程式碼會將資料載入 'driverkeywordDataSet.Driver' 資料表。您可以視需要進行移動或移除。
+            this.driverTableAdapter1.Fill(this.driverkeywordDataSet.Driver);
             // TODO: 這行程式碼會將資料載入 'machine_location_DataSet.Machines' 資料表。您可以視需要進行移動或移除。
             this.machinesTableAdapter8.Fill(this.machine_location_DataSet.Machines);
             // TODO: 這行程式碼會將資料載入 'machine_key_search_DataSet.Machines' 資料表。您可以視需要進行移動或移除。
@@ -251,6 +267,24 @@ namespace hw5v3
             {
                 System.Windows.Forms.MessageBox.Show(ex.Message);
             }
+        }
+
+        private void fillByToolStripButton1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.driverTableAdapter1.FillBy(this.driverkeywordDataSet.Driver, kEYWORDToolStripTextBox1.Text);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

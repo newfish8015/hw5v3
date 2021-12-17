@@ -43,7 +43,6 @@ namespace hw5v3
             System.Windows.Forms.Label sellerNameLabel;
             System.Windows.Forms.Label expr1Label;
             System.Windows.Forms.Label lastest_Order_idLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             System.Windows.Forms.Label machine_idLabel;
             System.Windows.Forms.Label category_idLabel;
             System.Windows.Forms.Label driver_idLabel;
@@ -54,6 +53,25 @@ namespace hw5v3
             System.Windows.Forms.Label countryLabel;
             System.Windows.Forms.Label conditionLabel;
             System.Windows.Forms.Label payment_MethodLabel;
+            System.Windows.Forms.Label driver_idLabel1;
+            System.Windows.Forms.Label first_nameLabel1;
+            System.Windows.Forms.Label last_nameLabel1;
+            System.Windows.Forms.Label genderLabel;
+            System.Windows.Forms.Label ageLabel;
+            System.Windows.Forms.Label salaryLabel;
+            System.Windows.Forms.Label licenseLabel;
+            System.Windows.Forms.Label machine_idLabel1;
+            System.Windows.Forms.Label categoryLabel;
+            System.Windows.Forms.Label locationLabel2;
+            System.Windows.Forms.Label driver_idLabel2;
+            System.Windows.Forms.Label first_nameLabel2;
+            System.Windows.Forms.Label last_nameLabel2;
+            System.Windows.Forms.Label category_idLabel1;
+            System.Windows.Forms.Label titleLabel2;
+            System.Windows.Forms.Label priceLabel2;
+            System.Windows.Forms.Label locationLabel3;
+            System.Windows.Forms.Label driver_idLabel3;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.vehical = new System.Windows.Forms.TabPage();
             this.vehical_tabControl = new System.Windows.Forms.TabControl();
@@ -85,6 +103,10 @@ namespace hw5v3
             this.dataGridViewTextBoxColumn69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn70 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.key_search_tabPage11 = new System.Windows.Forms.TabPage();
+            this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
+            this.keywordToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.keywordToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.machinesDataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn71 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn72 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -132,6 +154,25 @@ namespace hw5v3
             this.comboBox14 = new System.Windows.Forms.ComboBox();
             this.driverBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.fillToolStrip = new System.Windows.Forms.ToolStrip();
+            this.machine_idToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.machine_idToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.fillToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.machinesBindingSource8 = new System.Windows.Forms.BindingSource(this.components);
+            this.machine_location_DataSet = new hw5v3.machine_location_DataSet();
+            this.machine_idTextBox = new System.Windows.Forms.TextBox();
+            this.machinesBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
+            this.mation_location_DataSet_detail = new hw5v3.mation_location_DataSet_detail();
+            this.category_idTextBox = new System.Windows.Forms.TextBox();
+            this.driver_idTextBox = new System.Windows.Forms.TextBox();
+            this.yearsTextBox = new System.Windows.Forms.TextBox();
+            this.priceTextBox = new System.Windows.Forms.TextBox();
+            this.titleTextBox = new System.Windows.Forms.TextBox();
+            this.locationTextBox = new System.Windows.Forms.TextBox();
+            this.countryTextBox = new System.Windows.Forms.TextBox();
+            this.conditionTextBox = new System.Windows.Forms.TextBox();
+            this.payment_MethodTextBox = new System.Windows.Forms.TextBox();
             this.service = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -346,6 +387,108 @@ namespace hw5v3
             this.ordersBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.businessDataSet_Tim52 = new hw5v3.BusinessDataSet_Tim5();
             this.driver = new System.Windows.Forms.TabPage();
+            this.tabControl3 = new System.Windows.Forms.TabControl();
+            this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.fillByToolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.kEYWORDToolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.kEYWORDToolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.fillByToolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.driverDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn81 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn82 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn83 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn84 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn85 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn86 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn87 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.driverBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.driverkeywordDataSet = new hw5v3.driverkeywordDataSet();
+            this.tabPage12 = new System.Windows.Forms.TabPage();
+            this.locationListBox1 = new System.Windows.Forms.ListBox();
+            this.dataTable1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.driversearchDataSet = new hw5v3.driversearchDataSet();
+            this.driverDataTable1BindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.driverBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.categoryListBox = new System.Windows.Forms.ListBox();
+            this.driverDataTable1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.driverDataTable1BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.machine_idListBox = new System.Windows.Forms.ListBox();
+            this.bindingNavigator4 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem3 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem3 = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem3 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem3 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem3 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator9 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem3 = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator10 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem3 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem3 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator11 = new System.Windows.Forms.ToolStripSeparator();
+            this.driver_idTextBox1 = new System.Windows.Forms.TextBox();
+            this.first_nameTextBox1 = new System.Windows.Forms.TextBox();
+            this.last_nameTextBox1 = new System.Windows.Forms.TextBox();
+            this.genderTextBox = new System.Windows.Forms.TextBox();
+            this.ageTextBox = new System.Windows.Forms.TextBox();
+            this.salaryTextBox = new System.Windows.Forms.TextBox();
+            this.licenseTextBox = new System.Windows.Forms.TextBox();
+            this.tabPage13 = new System.Windows.Forms.TabPage();
+            this.bindingNavigator5 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem4 = new System.Windows.Forms.ToolStripButton();
+            this.driverBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.driverlistDataSet = new hw5v3.driverlistDataSet();
+            this.bindingNavigatorCountItem4 = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem4 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem4 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem4 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator12 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem4 = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator13 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem4 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem4 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator14 = new System.Windows.Forms.ToolStripSeparator();
+            this.driverDataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn88 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn89 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn90 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn91 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn92 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn93 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn94 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage14 = new System.Windows.Forms.TabPage();
+            this.bindingNavigator6 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem5 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem5 = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem5 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem5 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem5 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator15 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem5 = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator16 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem5 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem5 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator17 = new System.Windows.Forms.ToolStripSeparator();
+            this.driverdescriptionDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn95 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn96 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn97 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn98 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn99 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn100 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn101 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn102 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.driverdescriptionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.editdrivermachinesDataSet = new hw5v3.editdrivermachinesDataSet();
+            this.driver_idTextBox3 = new System.Windows.Forms.TextBox();
+            this.lastdriver_idBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.driver_idTextBox2 = new System.Windows.Forms.TextBox();
+            this.driverMachinesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.first_nameTextBox2 = new System.Windows.Forms.TextBox();
+            this.last_nameTextBox2 = new System.Windows.Forms.TextBox();
+            this.category_idTextBox1 = new System.Windows.Forms.TextBox();
+            this.titleTextBox1 = new System.Windows.Forms.TextBox();
+            this.priceTextBox1 = new System.Windows.Forms.TextBox();
+            this.locationTextBox1 = new System.Windows.Forms.TextBox();
             this.ordersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.nameBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
             this.staffBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -406,33 +549,22 @@ namespace hw5v3
             this.machinesTableAdapter5 = new hw5v3.machine_category_DataSetTableAdapters.MachinesTableAdapter();
             this.machinesTableAdapter6 = new hw5v3.machine_key_search_DataSetTableAdapters.MachinesTableAdapter();
             this.tableAdapterManager5 = new hw5v3.machine_key_search_DataSetTableAdapters.TableAdapterManager();
-            this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
-            this.keywordToolStripLabel = new System.Windows.Forms.ToolStripLabel();
-            this.keywordToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
-            this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.mation_location_DataSet_detail = new hw5v3.mation_location_DataSet_detail();
-            this.machinesBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
             this.machinesTableAdapter7 = new hw5v3.mation_location_DataSet_detailTableAdapters.MachinesTableAdapter();
             this.tableAdapterManager6 = new hw5v3.mation_location_DataSet_detailTableAdapters.TableAdapterManager();
-            this.fillToolStrip = new System.Windows.Forms.ToolStrip();
-            this.machine_idToolStripLabel = new System.Windows.Forms.ToolStripLabel();
-            this.machine_idToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
-            this.fillToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.machine_idTextBox = new System.Windows.Forms.TextBox();
-            this.category_idTextBox = new System.Windows.Forms.TextBox();
-            this.driver_idTextBox = new System.Windows.Forms.TextBox();
-            this.yearsTextBox = new System.Windows.Forms.TextBox();
-            this.priceTextBox = new System.Windows.Forms.TextBox();
-            this.titleTextBox = new System.Windows.Forms.TextBox();
-            this.locationTextBox = new System.Windows.Forms.TextBox();
-            this.countryTextBox = new System.Windows.Forms.TextBox();
-            this.conditionTextBox = new System.Windows.Forms.TextBox();
-            this.payment_MethodTextBox = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.machine_location_DataSet = new hw5v3.machine_location_DataSet();
             this.machinelocationDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.machinesBindingSource8 = new System.Windows.Forms.BindingSource(this.components);
             this.machinesTableAdapter8 = new hw5v3.machine_location_DataSetTableAdapters.MachinesTableAdapter();
+            this.driverTableAdapter1 = new hw5v3.driverkeywordDataSetTableAdapters.DriverTableAdapter();
+            this.tableAdapterManager7 = new hw5v3.driverkeywordDataSetTableAdapters.TableAdapterManager();
+            this.driverTableAdapter2 = new hw5v3.driversearchDataSetTableAdapters.DriverTableAdapter();
+            this.tableAdapterManager8 = new hw5v3.driversearchDataSetTableAdapters.TableAdapterManager();
+            this.dataTable1TableAdapter1 = new hw5v3.driversearchDataSetTableAdapters.DataTable1TableAdapter();
+            this.driverDataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.driverTableAdapter3 = new hw5v3.driverlistDataSetTableAdapters.DriverTableAdapter();
+            this.tableAdapterManager9 = new hw5v3.driverlistDataSetTableAdapters.TableAdapterManager();
+            this.driverMachinesTableAdapter = new hw5v3.editdrivermachinesDataSetTableAdapters.DriverMachinesTableAdapter();
+            this.tableAdapterManager10 = new hw5v3.editdrivermachinesDataSetTableAdapters.TableAdapterManager();
+            this.lastdriver_idTableAdapter = new hw5v3.editdrivermachinesDataSetTableAdapters.Lastdriver_idTableAdapter();
+            this.driverdescriptionTableAdapter = new hw5v3.editdrivermachinesDataSetTableAdapters.DriverdescriptionTableAdapter();
             birth_DateLabel = new System.Windows.Forms.Label();
             adressLabel = new System.Windows.Forms.Label();
             last_nameLabel = new System.Windows.Forms.Label();
@@ -456,6 +588,24 @@ namespace hw5v3
             countryLabel = new System.Windows.Forms.Label();
             conditionLabel = new System.Windows.Forms.Label();
             payment_MethodLabel = new System.Windows.Forms.Label();
+            driver_idLabel1 = new System.Windows.Forms.Label();
+            first_nameLabel1 = new System.Windows.Forms.Label();
+            last_nameLabel1 = new System.Windows.Forms.Label();
+            genderLabel = new System.Windows.Forms.Label();
+            ageLabel = new System.Windows.Forms.Label();
+            salaryLabel = new System.Windows.Forms.Label();
+            licenseLabel = new System.Windows.Forms.Label();
+            machine_idLabel1 = new System.Windows.Forms.Label();
+            categoryLabel = new System.Windows.Forms.Label();
+            locationLabel2 = new System.Windows.Forms.Label();
+            driver_idLabel2 = new System.Windows.Forms.Label();
+            first_nameLabel2 = new System.Windows.Forms.Label();
+            last_nameLabel2 = new System.Windows.Forms.Label();
+            category_idLabel1 = new System.Windows.Forms.Label();
+            titleLabel2 = new System.Windows.Forms.Label();
+            priceLabel2 = new System.Windows.Forms.Label();
+            locationLabel3 = new System.Windows.Forms.Label();
+            driver_idLabel3 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.vehical.SuspendLayout();
             this.vehical_tabControl.SuspendLayout();
@@ -466,6 +616,7 @@ namespace hw5v3
             ((System.ComponentModel.ISupportInitialize)(this.machineDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.machinesDataGridView)).BeginInit();
             this.key_search_tabPage11.SuspendLayout();
+            this.fillByToolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.machinesDataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.machine_key_search_DataSet)).BeginInit();
@@ -481,6 +632,11 @@ namespace hw5v3
             ((System.ComponentModel.ISupportInitialize)(this.machine_driver_DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.driverBindingSource1)).BeginInit();
             this.tabPage10.SuspendLayout();
+            this.fillToolStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machine_location_DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mation_location_DataSet_detail)).BeginInit();
             this.service.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -538,6 +694,36 @@ namespace hw5v3
             ((System.ComponentModel.ISupportInitialize)(this.nameBindingSource12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.businessDataSet_Tim52)).BeginInit();
+            this.driver.SuspendLayout();
+            this.tabControl3.SuspendLayout();
+            this.tabPage11.SuspendLayout();
+            this.fillByToolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.driverDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverkeywordDataSet)).BeginInit();
+            this.tabPage12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driversearchDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverDataTable1BindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverDataTable1BindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverDataTable1BindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator4)).BeginInit();
+            this.bindingNavigator4.SuspendLayout();
+            this.tabPage13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator5)).BeginInit();
+            this.bindingNavigator5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.driverBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverlistDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverDataGridView1)).BeginInit();
+            this.tabPage14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator6)).BeginInit();
+            this.bindingNavigator6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.driverdescriptionDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverdescriptionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.editdrivermachinesDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lastdriver_idBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverMachinesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nameBindingSource7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.staffBindingSource1)).BeginInit();
@@ -568,13 +754,8 @@ namespace hw5v3
             ((System.ComponentModel.ISupportInitialize)(this.nameBindingSource10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKOrdersMachine34C8D9D1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKOrdersMachine34C8D9D1BindingSource1)).BeginInit();
-            this.fillByToolStrip.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mation_location_DataSet_detail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource7)).BeginInit();
-            this.fillToolStrip.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.machine_location_DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.machinelocationDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverDataTable1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // birth_DateLabel
@@ -695,6 +876,258 @@ namespace hw5v3
             lastest_Order_idLabel.TabIndex = 20;
             lastest_Order_idLabel.Text = "lastest Order id:";
             // 
+            // machine_idLabel
+            // 
+            machine_idLabel.AutoSize = true;
+            machine_idLabel.Location = new System.Drawing.Point(255, 59);
+            machine_idLabel.Name = "machine_idLabel";
+            machine_idLabel.Size = new System.Drawing.Size(60, 12);
+            machine_idLabel.TabIndex = 0;
+            machine_idLabel.Text = "Machine id:";
+            // 
+            // category_idLabel
+            // 
+            category_idLabel.AutoSize = true;
+            category_idLabel.Location = new System.Drawing.Point(255, 87);
+            category_idLabel.Name = "category_idLabel";
+            category_idLabel.Size = new System.Drawing.Size(60, 12);
+            category_idLabel.TabIndex = 2;
+            category_idLabel.Text = "category id:";
+            // 
+            // driver_idLabel
+            // 
+            driver_idLabel.AutoSize = true;
+            driver_idLabel.Location = new System.Drawing.Point(255, 115);
+            driver_idLabel.Name = "driver_idLabel";
+            driver_idLabel.Size = new System.Drawing.Size(50, 12);
+            driver_idLabel.TabIndex = 4;
+            driver_idLabel.Text = "Driver id:";
+            // 
+            // yearsLabel
+            // 
+            yearsLabel.AutoSize = true;
+            yearsLabel.Location = new System.Drawing.Point(255, 143);
+            yearsLabel.Name = "yearsLabel";
+            yearsLabel.Size = new System.Drawing.Size(32, 12);
+            yearsLabel.TabIndex = 6;
+            yearsLabel.Text = "years:";
+            // 
+            // priceLabel1
+            // 
+            priceLabel1.AutoSize = true;
+            priceLabel1.Location = new System.Drawing.Point(255, 171);
+            priceLabel1.Name = "priceLabel1";
+            priceLabel1.Size = new System.Drawing.Size(31, 12);
+            priceLabel1.TabIndex = 8;
+            priceLabel1.Text = "price:";
+            // 
+            // titleLabel1
+            // 
+            titleLabel1.AutoSize = true;
+            titleLabel1.Location = new System.Drawing.Point(255, 199);
+            titleLabel1.Name = "titleLabel1";
+            titleLabel1.Size = new System.Drawing.Size(25, 12);
+            titleLabel1.TabIndex = 10;
+            titleLabel1.Text = "title:";
+            // 
+            // locationLabel1
+            // 
+            locationLabel1.AutoSize = true;
+            locationLabel1.Location = new System.Drawing.Point(255, 227);
+            locationLabel1.Name = "locationLabel1";
+            locationLabel1.Size = new System.Drawing.Size(45, 12);
+            locationLabel1.TabIndex = 12;
+            locationLabel1.Text = "location:";
+            // 
+            // countryLabel
+            // 
+            countryLabel.AutoSize = true;
+            countryLabel.Location = new System.Drawing.Point(255, 255);
+            countryLabel.Name = "countryLabel";
+            countryLabel.Size = new System.Drawing.Size(44, 12);
+            countryLabel.TabIndex = 14;
+            countryLabel.Text = "country:";
+            // 
+            // conditionLabel
+            // 
+            conditionLabel.AutoSize = true;
+            conditionLabel.Location = new System.Drawing.Point(255, 283);
+            conditionLabel.Name = "conditionLabel";
+            conditionLabel.Size = new System.Drawing.Size(52, 12);
+            conditionLabel.TabIndex = 16;
+            conditionLabel.Text = "condition:";
+            // 
+            // payment_MethodLabel
+            // 
+            payment_MethodLabel.AutoSize = true;
+            payment_MethodLabel.Location = new System.Drawing.Point(255, 311);
+            payment_MethodLabel.Name = "payment_MethodLabel";
+            payment_MethodLabel.Size = new System.Drawing.Size(87, 12);
+            payment_MethodLabel.TabIndex = 18;
+            payment_MethodLabel.Text = "Payment Method:";
+            // 
+            // driver_idLabel1
+            // 
+            driver_idLabel1.AutoSize = true;
+            driver_idLabel1.Location = new System.Drawing.Point(20, 69);
+            driver_idLabel1.Name = "driver_idLabel1";
+            driver_idLabel1.Size = new System.Drawing.Size(50, 12);
+            driver_idLabel1.TabIndex = 0;
+            driver_idLabel1.Text = "Driver id:";
+            // 
+            // first_nameLabel1
+            // 
+            first_nameLabel1.AutoSize = true;
+            first_nameLabel1.Location = new System.Drawing.Point(20, 97);
+            first_nameLabel1.Name = "first_nameLabel1";
+            first_nameLabel1.Size = new System.Drawing.Size(54, 12);
+            first_nameLabel1.TabIndex = 2;
+            first_nameLabel1.Text = "first name:";
+            // 
+            // last_nameLabel1
+            // 
+            last_nameLabel1.AutoSize = true;
+            last_nameLabel1.Location = new System.Drawing.Point(20, 125);
+            last_nameLabel1.Name = "last_nameLabel1";
+            last_nameLabel1.Size = new System.Drawing.Size(51, 12);
+            last_nameLabel1.TabIndex = 4;
+            last_nameLabel1.Text = "last name:";
+            // 
+            // genderLabel
+            // 
+            genderLabel.AutoSize = true;
+            genderLabel.Location = new System.Drawing.Point(20, 153);
+            genderLabel.Name = "genderLabel";
+            genderLabel.Size = new System.Drawing.Size(42, 12);
+            genderLabel.TabIndex = 6;
+            genderLabel.Text = "Gender:";
+            // 
+            // ageLabel
+            // 
+            ageLabel.AutoSize = true;
+            ageLabel.Location = new System.Drawing.Point(20, 181);
+            ageLabel.Name = "ageLabel";
+            ageLabel.Size = new System.Drawing.Size(24, 12);
+            ageLabel.TabIndex = 8;
+            ageLabel.Text = "age:";
+            // 
+            // salaryLabel
+            // 
+            salaryLabel.AutoSize = true;
+            salaryLabel.Location = new System.Drawing.Point(20, 209);
+            salaryLabel.Name = "salaryLabel";
+            salaryLabel.Size = new System.Drawing.Size(37, 12);
+            salaryLabel.TabIndex = 10;
+            salaryLabel.Text = "Salary:";
+            // 
+            // licenseLabel
+            // 
+            licenseLabel.AutoSize = true;
+            licenseLabel.Location = new System.Drawing.Point(20, 237);
+            licenseLabel.Name = "licenseLabel";
+            licenseLabel.Size = new System.Drawing.Size(43, 12);
+            licenseLabel.TabIndex = 12;
+            licenseLabel.Text = "License:";
+            // 
+            // machine_idLabel1
+            // 
+            machine_idLabel1.AutoSize = true;
+            machine_idLabel1.Location = new System.Drawing.Point(281, 66);
+            machine_idLabel1.Name = "machine_idLabel1";
+            machine_idLabel1.Size = new System.Drawing.Size(60, 12);
+            machine_idLabel1.TabIndex = 15;
+            machine_idLabel1.Text = "Machine id:";
+            // 
+            // categoryLabel
+            // 
+            categoryLabel.AutoSize = true;
+            categoryLabel.Location = new System.Drawing.Point(479, 66);
+            categoryLabel.Name = "categoryLabel";
+            categoryLabel.Size = new System.Drawing.Size(48, 12);
+            categoryLabel.TabIndex = 17;
+            categoryLabel.Text = "category:";
+            // 
+            // locationLabel2
+            // 
+            locationLabel2.AutoSize = true;
+            locationLabel2.Location = new System.Drawing.Point(664, 66);
+            locationLabel2.Name = "locationLabel2";
+            locationLabel2.Size = new System.Drawing.Size(45, 12);
+            locationLabel2.TabIndex = 19;
+            locationLabel2.Text = "location:";
+            // 
+            // driver_idLabel2
+            // 
+            driver_idLabel2.AutoSize = true;
+            driver_idLabel2.Location = new System.Drawing.Point(23, 89);
+            driver_idLabel2.Name = "driver_idLabel2";
+            driver_idLabel2.Size = new System.Drawing.Size(50, 12);
+            driver_idLabel2.TabIndex = 0;
+            driver_idLabel2.Text = "Driver id:";
+            // 
+            // first_nameLabel2
+            // 
+            first_nameLabel2.AutoSize = true;
+            first_nameLabel2.Location = new System.Drawing.Point(23, 117);
+            first_nameLabel2.Name = "first_nameLabel2";
+            first_nameLabel2.Size = new System.Drawing.Size(54, 12);
+            first_nameLabel2.TabIndex = 2;
+            first_nameLabel2.Text = "first name:";
+            // 
+            // last_nameLabel2
+            // 
+            last_nameLabel2.AutoSize = true;
+            last_nameLabel2.Location = new System.Drawing.Point(23, 145);
+            last_nameLabel2.Name = "last_nameLabel2";
+            last_nameLabel2.Size = new System.Drawing.Size(51, 12);
+            last_nameLabel2.TabIndex = 4;
+            last_nameLabel2.Text = "last name:";
+            // 
+            // category_idLabel1
+            // 
+            category_idLabel1.AutoSize = true;
+            category_idLabel1.Location = new System.Drawing.Point(23, 173);
+            category_idLabel1.Name = "category_idLabel1";
+            category_idLabel1.Size = new System.Drawing.Size(60, 12);
+            category_idLabel1.TabIndex = 6;
+            category_idLabel1.Text = "category id:";
+            // 
+            // titleLabel2
+            // 
+            titleLabel2.AutoSize = true;
+            titleLabel2.Location = new System.Drawing.Point(23, 201);
+            titleLabel2.Name = "titleLabel2";
+            titleLabel2.Size = new System.Drawing.Size(25, 12);
+            titleLabel2.TabIndex = 8;
+            titleLabel2.Text = "title:";
+            // 
+            // priceLabel2
+            // 
+            priceLabel2.AutoSize = true;
+            priceLabel2.Location = new System.Drawing.Point(23, 229);
+            priceLabel2.Name = "priceLabel2";
+            priceLabel2.Size = new System.Drawing.Size(31, 12);
+            priceLabel2.TabIndex = 10;
+            priceLabel2.Text = "price:";
+            // 
+            // locationLabel3
+            // 
+            locationLabel3.AutoSize = true;
+            locationLabel3.Location = new System.Drawing.Point(23, 257);
+            locationLabel3.Name = "locationLabel3";
+            locationLabel3.Size = new System.Drawing.Size(45, 12);
+            locationLabel3.TabIndex = 12;
+            locationLabel3.Text = "location:";
+            // 
+            // driver_idLabel3
+            // 
+            driver_idLabel3.AutoSize = true;
+            driver_idLabel3.Location = new System.Drawing.Point(23, 61);
+            driver_idLabel3.Name = "driver_idLabel3";
+            driver_idLabel3.Size = new System.Drawing.Size(39, 12);
+            driver_idLabel3.TabIndex = 14;
+            driver_idLabel3.Text = "Last id:";
+            // 
             // tabControl1
             // 
             this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -706,7 +1139,7 @@ namespace hw5v3
             this.tabControl1.Location = new System.Drawing.Point(3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(797, 449);
+            this.tabControl1.Size = new System.Drawing.Size(1100, 449);
             this.tabControl1.TabIndex = 0;
             // 
             // vehical
@@ -716,7 +1149,7 @@ namespace hw5v3
             this.vehical.Location = new System.Drawing.Point(4, 22);
             this.vehical.Name = "vehical";
             this.vehical.Padding = new System.Windows.Forms.Padding(3);
-            this.vehical.Size = new System.Drawing.Size(789, 423);
+            this.vehical.Size = new System.Drawing.Size(1092, 423);
             this.vehical.TabIndex = 0;
             this.vehical.Text = "vehical";
             this.vehical.UseVisualStyleBackColor = true;
@@ -839,6 +1272,7 @@ namespace hw5v3
             // 
             this.toolStripTextBox1.AccessibleName = "位置";
             this.toolStripTextBox1.AutoSize = false;
+            this.toolStripTextBox1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
             this.toolStripTextBox1.Name = "toolStripTextBox1";
             this.toolStripTextBox1.Size = new System.Drawing.Size(50, 23);
             this.toolStripTextBox1.Text = "0";
@@ -974,6 +1408,38 @@ namespace hw5v3
             this.key_search_tabPage11.TabIndex = 1;
             this.key_search_tabPage11.Text = "key_search";
             this.key_search_tabPage11.UseVisualStyleBackColor = true;
+            // 
+            // fillByToolStrip
+            // 
+            this.fillByToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.keywordToolStripLabel,
+            this.keywordToolStripTextBox,
+            this.fillByToolStripButton});
+            this.fillByToolStrip.Location = new System.Drawing.Point(3, 3);
+            this.fillByToolStrip.Name = "fillByToolStrip";
+            this.fillByToolStrip.Size = new System.Drawing.Size(775, 25);
+            this.fillByToolStrip.TabIndex = 1;
+            this.fillByToolStrip.Text = "fillByToolStrip";
+            // 
+            // keywordToolStripLabel
+            // 
+            this.keywordToolStripLabel.Name = "keywordToolStripLabel";
+            this.keywordToolStripLabel.Size = new System.Drawing.Size(58, 22);
+            this.keywordToolStripLabel.Text = "keyword:";
+            // 
+            // keywordToolStripTextBox
+            // 
+            this.keywordToolStripTextBox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
+            this.keywordToolStripTextBox.Name = "keywordToolStripTextBox";
+            this.keywordToolStripTextBox.Size = new System.Drawing.Size(100, 25);
+            // 
+            // fillByToolStripButton
+            // 
+            this.fillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillByToolStripButton.Name = "fillByToolStripButton";
+            this.fillByToolStripButton.Size = new System.Drawing.Size(47, 22);
+            this.fillByToolStripButton.Text = "search";
+            this.fillByToolStripButton.Click += new System.EventHandler(this.fillByToolStripButton_Click);
             // 
             // machinesDataGridView1
             // 
@@ -1387,13 +1853,158 @@ namespace hw5v3
             this.tabPage10.Text = "location_search";
             this.tabPage10.UseVisualStyleBackColor = true;
             // 
+            // fillToolStrip
+            // 
+            this.fillToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.machine_idToolStripLabel,
+            this.machine_idToolStripTextBox,
+            this.fillToolStripButton});
+            this.fillToolStrip.Location = new System.Drawing.Point(3, 3);
+            this.fillToolStrip.Name = "fillToolStrip";
+            this.fillToolStrip.Size = new System.Drawing.Size(775, 25);
+            this.fillToolStrip.TabIndex = 1;
+            this.fillToolStrip.Text = "fillToolStrip";
+            // 
+            // machine_idToolStripLabel
+            // 
+            this.machine_idToolStripLabel.Name = "machine_idToolStripLabel";
+            this.machine_idToolStripLabel.Size = new System.Drawing.Size(75, 22);
+            this.machine_idToolStripLabel.Text = "Machine_id:";
+            // 
+            // machine_idToolStripTextBox
+            // 
+            this.machine_idToolStripTextBox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
+            this.machine_idToolStripTextBox.Name = "machine_idToolStripTextBox";
+            this.machine_idToolStripTextBox.Size = new System.Drawing.Size(100, 25);
+            // 
+            // fillToolStripButton
+            // 
+            this.fillToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillToolStripButton.Name = "fillToolStripButton";
+            this.fillToolStripButton.Size = new System.Drawing.Size(47, 22);
+            this.fillToolStripButton.Text = "search";
+            this.fillToolStripButton.Click += new System.EventHandler(this.fillToolStripButton_Click);
+            // 
+            // listBox1
+            // 
+            this.listBox1.DataSource = this.machinesBindingSource8;
+            this.listBox1.DisplayMember = "location";
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 12;
+            this.listBox1.Location = new System.Drawing.Point(34, 56);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(187, 268);
+            this.listBox1.TabIndex = 20;
+            this.listBox1.ValueMember = "Machine_id";
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // machinesBindingSource8
+            // 
+            this.machinesBindingSource8.DataMember = "Machines";
+            this.machinesBindingSource8.DataSource = this.machine_location_DataSet;
+            // 
+            // machine_location_DataSet
+            // 
+            this.machine_location_DataSet.DataSetName = "machine_location_DataSet";
+            this.machine_location_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // machine_idTextBox
+            // 
+            this.machine_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "Machine_id", true));
+            this.machine_idTextBox.Location = new System.Drawing.Point(348, 56);
+            this.machine_idTextBox.Name = "machine_idTextBox";
+            this.machine_idTextBox.Size = new System.Drawing.Size(367, 22);
+            this.machine_idTextBox.TabIndex = 1;
+            // 
+            // machinesBindingSource7
+            // 
+            this.machinesBindingSource7.DataMember = "Machines";
+            this.machinesBindingSource7.DataSource = this.mation_location_DataSet_detail;
+            // 
+            // mation_location_DataSet_detail
+            // 
+            this.mation_location_DataSet_detail.DataSetName = "mation_location_DataSet_detail";
+            this.mation_location_DataSet_detail.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // category_idTextBox
+            // 
+            this.category_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "category_id", true));
+            this.category_idTextBox.Location = new System.Drawing.Point(348, 84);
+            this.category_idTextBox.Name = "category_idTextBox";
+            this.category_idTextBox.Size = new System.Drawing.Size(367, 22);
+            this.category_idTextBox.TabIndex = 3;
+            // 
+            // driver_idTextBox
+            // 
+            this.driver_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "Driver_id", true));
+            this.driver_idTextBox.Location = new System.Drawing.Point(348, 112);
+            this.driver_idTextBox.Name = "driver_idTextBox";
+            this.driver_idTextBox.Size = new System.Drawing.Size(367, 22);
+            this.driver_idTextBox.TabIndex = 5;
+            // 
+            // yearsTextBox
+            // 
+            this.yearsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "years", true));
+            this.yearsTextBox.Location = new System.Drawing.Point(348, 140);
+            this.yearsTextBox.Name = "yearsTextBox";
+            this.yearsTextBox.Size = new System.Drawing.Size(367, 22);
+            this.yearsTextBox.TabIndex = 7;
+            // 
+            // priceTextBox
+            // 
+            this.priceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "price", true));
+            this.priceTextBox.Location = new System.Drawing.Point(348, 168);
+            this.priceTextBox.Name = "priceTextBox";
+            this.priceTextBox.Size = new System.Drawing.Size(367, 22);
+            this.priceTextBox.TabIndex = 9;
+            // 
+            // titleTextBox
+            // 
+            this.titleTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "title", true));
+            this.titleTextBox.Location = new System.Drawing.Point(348, 196);
+            this.titleTextBox.Name = "titleTextBox";
+            this.titleTextBox.Size = new System.Drawing.Size(367, 22);
+            this.titleTextBox.TabIndex = 11;
+            // 
+            // locationTextBox
+            // 
+            this.locationTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "location", true));
+            this.locationTextBox.Location = new System.Drawing.Point(348, 224);
+            this.locationTextBox.Name = "locationTextBox";
+            this.locationTextBox.Size = new System.Drawing.Size(367, 22);
+            this.locationTextBox.TabIndex = 13;
+            // 
+            // countryTextBox
+            // 
+            this.countryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "country", true));
+            this.countryTextBox.Location = new System.Drawing.Point(348, 252);
+            this.countryTextBox.Name = "countryTextBox";
+            this.countryTextBox.Size = new System.Drawing.Size(367, 22);
+            this.countryTextBox.TabIndex = 15;
+            // 
+            // conditionTextBox
+            // 
+            this.conditionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "condition", true));
+            this.conditionTextBox.Location = new System.Drawing.Point(348, 280);
+            this.conditionTextBox.Name = "conditionTextBox";
+            this.conditionTextBox.Size = new System.Drawing.Size(367, 22);
+            this.conditionTextBox.TabIndex = 17;
+            // 
+            // payment_MethodTextBox
+            // 
+            this.payment_MethodTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "Payment_Method", true));
+            this.payment_MethodTextBox.Location = new System.Drawing.Point(348, 308);
+            this.payment_MethodTextBox.Name = "payment_MethodTextBox";
+            this.payment_MethodTextBox.Size = new System.Drawing.Size(367, 22);
+            this.payment_MethodTextBox.TabIndex = 19;
+            // 
             // service
             // 
             this.service.Controls.Add(this.tabControl2);
             this.service.Location = new System.Drawing.Point(4, 22);
             this.service.Name = "service";
             this.service.Padding = new System.Windows.Forms.Padding(3);
-            this.service.Size = new System.Drawing.Size(789, 423);
+            this.service.Size = new System.Drawing.Size(1092, 423);
             this.service.TabIndex = 1;
             this.service.Text = "service";
             this.service.UseVisualStyleBackColor = true;
@@ -1415,7 +2026,7 @@ namespace hw5v3
             this.tabControl2.Location = new System.Drawing.Point(3, 6);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(780, 414);
+            this.tabControl2.Size = new System.Drawing.Size(1083, 414);
             this.tabControl2.TabIndex = 0;
             // 
             // tabPage1
@@ -1426,7 +2037,7 @@ namespace hw5v3
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(772, 388);
+            this.tabPage1.Size = new System.Drawing.Size(1075, 388);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "User Lists";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -1457,7 +2068,7 @@ namespace hw5v3
             this.membershipBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.membershipBindingNavigator.Name = "membershipBindingNavigator";
             this.membershipBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.membershipBindingNavigator.Size = new System.Drawing.Size(766, 25);
+            this.membershipBindingNavigator.Size = new System.Drawing.Size(1069, 25);
             this.membershipBindingNavigator.TabIndex = 1;
             this.membershipBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -1523,6 +2134,7 @@ namespace hw5v3
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "位置";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -1584,7 +2196,7 @@ namespace hw5v3
             this.membershipDataGridView.Location = new System.Drawing.Point(3, 31);
             this.membershipDataGridView.Name = "membershipDataGridView";
             this.membershipDataGridView.RowTemplate.Height = 24;
-            this.membershipDataGridView.Size = new System.Drawing.Size(763, 351);
+            this.membershipDataGridView.Size = new System.Drawing.Size(1066, 351);
             this.membershipDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn1
@@ -1636,7 +2248,7 @@ namespace hw5v3
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(772, 388);
+            this.tabPage2.Size = new System.Drawing.Size(1075, 388);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Order List";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1666,7 +2278,7 @@ namespace hw5v3
             this.bindingNavigator2.MovePreviousItem = this.bindingNavigatorMovePreviousItem2;
             this.bindingNavigator2.Name = "bindingNavigator2";
             this.bindingNavigator2.PositionItem = this.bindingNavigatorPositionItem2;
-            this.bindingNavigator2.Size = new System.Drawing.Size(766, 25);
+            this.bindingNavigator2.Size = new System.Drawing.Size(1069, 25);
             this.bindingNavigator2.TabIndex = 1;
             this.bindingNavigator2.Text = "bindingNavigator2";
             // 
@@ -1718,6 +2330,7 @@ namespace hw5v3
             // 
             this.bindingNavigatorPositionItem2.AccessibleName = "位置";
             this.bindingNavigatorPositionItem2.AutoSize = false;
+            this.bindingNavigatorPositionItem2.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
             this.bindingNavigatorPositionItem2.Name = "bindingNavigatorPositionItem2";
             this.bindingNavigatorPositionItem2.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem2.Text = "0";
@@ -1780,7 +2393,7 @@ namespace hw5v3
             this.ordersDataGridView.Location = new System.Drawing.Point(3, 31);
             this.ordersDataGridView.Name = "ordersDataGridView";
             this.ordersDataGridView.RowTemplate.Height = 24;
-            this.ordersDataGridView.Size = new System.Drawing.Size(763, 358);
+            this.ordersDataGridView.Size = new System.Drawing.Size(1066, 358);
             this.ordersDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn8
@@ -1861,7 +2474,7 @@ namespace hw5v3
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(772, 388);
+            this.tabPage3.Size = new System.Drawing.Size(1075, 388);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "User search";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -1891,7 +2504,7 @@ namespace hw5v3
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem1;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem1;
-            this.bindingNavigator1.Size = new System.Drawing.Size(766, 25);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1069, 25);
             this.bindingNavigator1.TabIndex = 14;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -1957,6 +2570,7 @@ namespace hw5v3
             // 
             this.bindingNavigatorPositionItem1.AccessibleName = "位置";
             this.bindingNavigatorPositionItem1.AutoSize = false;
+            this.bindingNavigatorPositionItem1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
             this.bindingNavigatorPositionItem1.Name = "bindingNavigatorPositionItem1";
             this.bindingNavigatorPositionItem1.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem1.Text = "0";
@@ -2144,7 +2758,7 @@ namespace hw5v3
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(772, 388);
+            this.tabPage4.Size = new System.Drawing.Size(1075, 388);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Add Users";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -2364,7 +2978,7 @@ namespace hw5v3
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(772, 388);
+            this.tabPage5.Size = new System.Drawing.Size(1075, 388);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Delete User";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -2388,7 +3002,7 @@ namespace hw5v3
             this.membershipDataGridView2.Location = new System.Drawing.Point(6, 110);
             this.membershipDataGridView2.Name = "membershipDataGridView2";
             this.membershipDataGridView2.RowTemplate.Height = 24;
-            this.membershipDataGridView2.Size = new System.Drawing.Size(763, 272);
+            this.membershipDataGridView2.Size = new System.Drawing.Size(1066, 272);
             this.membershipDataGridView2.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn23
@@ -2473,7 +3087,7 @@ namespace hw5v3
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(772, 388);
+            this.tabPage6.Size = new System.Drawing.Size(1075, 388);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Delete Orders";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -2498,7 +3112,7 @@ namespace hw5v3
             this.ordersDataGridView1.Location = new System.Drawing.Point(-2, 82);
             this.ordersDataGridView1.Name = "ordersDataGridView1";
             this.ordersDataGridView1.RowTemplate.Height = 24;
-            this.ordersDataGridView1.Size = new System.Drawing.Size(771, 300);
+            this.ordersDataGridView1.Size = new System.Drawing.Size(1074, 300);
             this.ordersDataGridView1.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn30
@@ -2605,7 +3219,7 @@ namespace hw5v3
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(772, 388);
+            this.tabPage7.Size = new System.Drawing.Size(1075, 388);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Add Orders";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -2878,7 +3492,7 @@ namespace hw5v3
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(772, 388);
+            this.tabPage8.Size = new System.Drawing.Size(1075, 388);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Modify User";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -3039,7 +3653,7 @@ namespace hw5v3
             this.tabPage9.Location = new System.Drawing.Point(4, 22);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(772, 388);
+            this.tabPage9.Size = new System.Drawing.Size(1075, 388);
             this.tabPage9.TabIndex = 8;
             this.tabPage9.Text = "Modify Order";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -3064,7 +3678,7 @@ namespace hw5v3
             this.ordersDataGridView3.Location = new System.Drawing.Point(3, 113);
             this.ordersDataGridView3.Name = "ordersDataGridView3";
             this.ordersDataGridView3.RowTemplate.Height = 24;
-            this.ordersDataGridView3.Size = new System.Drawing.Size(763, 272);
+            this.ordersDataGridView3.Size = new System.Drawing.Size(1066, 272);
             this.ordersDataGridView3.TabIndex = 11;
             // 
             // dataGridViewTextBoxColumn53
@@ -3249,13 +3863,917 @@ namespace hw5v3
             // 
             // driver
             // 
+            this.driver.Controls.Add(this.tabControl3);
             this.driver.Location = new System.Drawing.Point(4, 22);
             this.driver.Name = "driver";
             this.driver.Padding = new System.Windows.Forms.Padding(3);
-            this.driver.Size = new System.Drawing.Size(789, 423);
+            this.driver.Size = new System.Drawing.Size(1092, 423);
             this.driver.TabIndex = 2;
             this.driver.Text = "driver";
             this.driver.UseVisualStyleBackColor = true;
+            // 
+            // tabControl3
+            // 
+            this.tabControl3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl3.Controls.Add(this.tabPage11);
+            this.tabControl3.Controls.Add(this.tabPage12);
+            this.tabControl3.Controls.Add(this.tabPage13);
+            this.tabControl3.Controls.Add(this.tabPage14);
+            this.tabControl3.Location = new System.Drawing.Point(0, 3);
+            this.tabControl3.Name = "tabControl3";
+            this.tabControl3.SelectedIndex = 0;
+            this.tabControl3.Size = new System.Drawing.Size(1089, 417);
+            this.tabControl3.TabIndex = 0;
+            // 
+            // tabPage11
+            // 
+            this.tabPage11.Controls.Add(this.fillByToolStrip1);
+            this.tabPage11.Controls.Add(this.driverDataGridView);
+            this.tabPage11.Location = new System.Drawing.Point(4, 22);
+            this.tabPage11.Name = "tabPage11";
+            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage11.Size = new System.Drawing.Size(1081, 391);
+            this.tabPage11.TabIndex = 0;
+            this.tabPage11.Text = "driverkeyword";
+            this.tabPage11.UseVisualStyleBackColor = true;
+            // 
+            // fillByToolStrip1
+            // 
+            this.fillByToolStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.fillByToolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.kEYWORDToolStripLabel1,
+            this.kEYWORDToolStripTextBox1,
+            this.fillByToolStripButton1});
+            this.fillByToolStrip1.Location = new System.Drawing.Point(3, 3);
+            this.fillByToolStrip1.Name = "fillByToolStrip1";
+            this.fillByToolStrip1.Size = new System.Drawing.Size(233, 25);
+            this.fillByToolStrip1.TabIndex = 1;
+            this.fillByToolStrip1.Text = "fillByToolStrip1";
+            // 
+            // kEYWORDToolStripLabel1
+            // 
+            this.kEYWORDToolStripLabel1.Name = "kEYWORDToolStripLabel1";
+            this.kEYWORDToolStripLabel1.Size = new System.Drawing.Size(70, 22);
+            this.kEYWORDToolStripLabel1.Text = "KEYWORD:";
+            // 
+            // kEYWORDToolStripTextBox1
+            // 
+            this.kEYWORDToolStripTextBox1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
+            this.kEYWORDToolStripTextBox1.Name = "kEYWORDToolStripTextBox1";
+            this.kEYWORDToolStripTextBox1.Size = new System.Drawing.Size(100, 25);
+            // 
+            // fillByToolStripButton1
+            // 
+            this.fillByToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillByToolStripButton1.Name = "fillByToolStripButton1";
+            this.fillByToolStripButton1.Size = new System.Drawing.Size(49, 22);
+            this.fillByToolStripButton1.Text = "Search";
+            this.fillByToolStripButton1.Click += new System.EventHandler(this.fillByToolStripButton1_Click);
+            // 
+            // driverDataGridView
+            // 
+            this.driverDataGridView.AutoGenerateColumns = false;
+            this.driverDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.driverDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn81,
+            this.dataGridViewTextBoxColumn82,
+            this.dataGridViewTextBoxColumn83,
+            this.dataGridViewTextBoxColumn84,
+            this.dataGridViewTextBoxColumn85,
+            this.dataGridViewTextBoxColumn86,
+            this.dataGridViewTextBoxColumn87});
+            this.driverDataGridView.DataSource = this.driverBindingSource2;
+            this.driverDataGridView.Location = new System.Drawing.Point(3, 31);
+            this.driverDataGridView.Name = "driverDataGridView";
+            this.driverDataGridView.RowTemplate.Height = 24;
+            this.driverDataGridView.Size = new System.Drawing.Size(772, 357);
+            this.driverDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn81
+            // 
+            this.dataGridViewTextBoxColumn81.DataPropertyName = "Driver_id";
+            this.dataGridViewTextBoxColumn81.HeaderText = "Driver_id";
+            this.dataGridViewTextBoxColumn81.Name = "dataGridViewTextBoxColumn81";
+            this.dataGridViewTextBoxColumn81.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn82
+            // 
+            this.dataGridViewTextBoxColumn82.DataPropertyName = "first_name";
+            this.dataGridViewTextBoxColumn82.HeaderText = "first_name";
+            this.dataGridViewTextBoxColumn82.Name = "dataGridViewTextBoxColumn82";
+            // 
+            // dataGridViewTextBoxColumn83
+            // 
+            this.dataGridViewTextBoxColumn83.DataPropertyName = "last_name";
+            this.dataGridViewTextBoxColumn83.HeaderText = "last_name";
+            this.dataGridViewTextBoxColumn83.Name = "dataGridViewTextBoxColumn83";
+            // 
+            // dataGridViewTextBoxColumn84
+            // 
+            this.dataGridViewTextBoxColumn84.DataPropertyName = "Gender";
+            this.dataGridViewTextBoxColumn84.HeaderText = "Gender";
+            this.dataGridViewTextBoxColumn84.Name = "dataGridViewTextBoxColumn84";
+            // 
+            // dataGridViewTextBoxColumn85
+            // 
+            this.dataGridViewTextBoxColumn85.DataPropertyName = "age";
+            this.dataGridViewTextBoxColumn85.HeaderText = "age";
+            this.dataGridViewTextBoxColumn85.Name = "dataGridViewTextBoxColumn85";
+            // 
+            // dataGridViewTextBoxColumn86
+            // 
+            this.dataGridViewTextBoxColumn86.DataPropertyName = "Salary";
+            this.dataGridViewTextBoxColumn86.HeaderText = "Salary";
+            this.dataGridViewTextBoxColumn86.Name = "dataGridViewTextBoxColumn86";
+            // 
+            // dataGridViewTextBoxColumn87
+            // 
+            this.dataGridViewTextBoxColumn87.DataPropertyName = "License";
+            this.dataGridViewTextBoxColumn87.HeaderText = "License";
+            this.dataGridViewTextBoxColumn87.Name = "dataGridViewTextBoxColumn87";
+            // 
+            // driverBindingSource2
+            // 
+            this.driverBindingSource2.DataMember = "Driver";
+            this.driverBindingSource2.DataSource = this.driverkeywordDataSet;
+            // 
+            // driverkeywordDataSet
+            // 
+            this.driverkeywordDataSet.DataSetName = "driverkeywordDataSet";
+            this.driverkeywordDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tabPage12
+            // 
+            this.tabPage12.AutoScroll = true;
+            this.tabPage12.Controls.Add(locationLabel2);
+            this.tabPage12.Controls.Add(this.locationListBox1);
+            this.tabPage12.Controls.Add(categoryLabel);
+            this.tabPage12.Controls.Add(this.categoryListBox);
+            this.tabPage12.Controls.Add(machine_idLabel1);
+            this.tabPage12.Controls.Add(this.machine_idListBox);
+            this.tabPage12.Controls.Add(this.bindingNavigator4);
+            this.tabPage12.Controls.Add(driver_idLabel1);
+            this.tabPage12.Controls.Add(this.driver_idTextBox1);
+            this.tabPage12.Controls.Add(first_nameLabel1);
+            this.tabPage12.Controls.Add(this.first_nameTextBox1);
+            this.tabPage12.Controls.Add(last_nameLabel1);
+            this.tabPage12.Controls.Add(this.last_nameTextBox1);
+            this.tabPage12.Controls.Add(genderLabel);
+            this.tabPage12.Controls.Add(this.genderTextBox);
+            this.tabPage12.Controls.Add(ageLabel);
+            this.tabPage12.Controls.Add(this.ageTextBox);
+            this.tabPage12.Controls.Add(salaryLabel);
+            this.tabPage12.Controls.Add(this.salaryTextBox);
+            this.tabPage12.Controls.Add(licenseLabel);
+            this.tabPage12.Controls.Add(this.licenseTextBox);
+            this.tabPage12.Location = new System.Drawing.Point(4, 22);
+            this.tabPage12.Name = "tabPage12";
+            this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage12.Size = new System.Drawing.Size(1081, 391);
+            this.tabPage12.TabIndex = 1;
+            this.tabPage12.Text = "driversearch";
+            this.tabPage12.UseVisualStyleBackColor = true;
+            // 
+            // locationListBox1
+            // 
+            this.locationListBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.dataTable1BindingSource1, "location", true));
+            this.locationListBox1.DataSource = this.driverDataTable1BindingSource3;
+            this.locationListBox1.DisplayMember = "location";
+            this.locationListBox1.FormattingEnabled = true;
+            this.locationListBox1.ItemHeight = 12;
+            this.locationListBox1.Location = new System.Drawing.Point(715, 66);
+            this.locationListBox1.Name = "locationListBox1";
+            this.locationListBox1.Size = new System.Drawing.Size(120, 256);
+            this.locationListBox1.TabIndex = 20;
+            this.locationListBox1.ValueMember = "location";
+            // 
+            // dataTable1BindingSource1
+            // 
+            this.dataTable1BindingSource1.DataMember = "DataTable1";
+            this.dataTable1BindingSource1.DataSource = this.driversearchDataSet;
+            // 
+            // driversearchDataSet
+            // 
+            this.driversearchDataSet.DataSetName = "driversearchDataSet";
+            this.driversearchDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // driverDataTable1BindingSource3
+            // 
+            this.driverDataTable1BindingSource3.DataMember = "Driver_DataTable1";
+            this.driverDataTable1BindingSource3.DataSource = this.driverBindingSource3;
+            // 
+            // driverBindingSource3
+            // 
+            this.driverBindingSource3.DataMember = "Driver";
+            this.driverBindingSource3.DataSource = this.driversearchDataSet;
+            // 
+            // categoryListBox
+            // 
+            this.categoryListBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.driverDataTable1BindingSource1, "category", true));
+            this.categoryListBox.DataSource = this.driverDataTable1BindingSource2;
+            this.categoryListBox.DisplayMember = "category";
+            this.categoryListBox.FormattingEnabled = true;
+            this.categoryListBox.ItemHeight = 12;
+            this.categoryListBox.Location = new System.Drawing.Point(533, 66);
+            this.categoryListBox.Name = "categoryListBox";
+            this.categoryListBox.Size = new System.Drawing.Size(120, 256);
+            this.categoryListBox.TabIndex = 18;
+            this.categoryListBox.ValueMember = "category";
+            // 
+            // driverDataTable1BindingSource1
+            // 
+            this.driverDataTable1BindingSource1.DataMember = "Driver_DataTable1";
+            this.driverDataTable1BindingSource1.DataSource = this.driverBindingSource3;
+            // 
+            // driverDataTable1BindingSource2
+            // 
+            this.driverDataTable1BindingSource2.DataMember = "Driver_DataTable1";
+            this.driverDataTable1BindingSource2.DataSource = this.driverBindingSource3;
+            // 
+            // machine_idListBox
+            // 
+            this.machine_idListBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.dataTable1BindingSource1, "Machine_id", true));
+            this.machine_idListBox.DataSource = this.driverDataTable1BindingSource1;
+            this.machine_idListBox.DisplayMember = "Machine_id";
+            this.machine_idListBox.FormattingEnabled = true;
+            this.machine_idListBox.ItemHeight = 12;
+            this.machine_idListBox.Location = new System.Drawing.Point(347, 66);
+            this.machine_idListBox.Name = "machine_idListBox";
+            this.machine_idListBox.Size = new System.Drawing.Size(120, 256);
+            this.machine_idListBox.TabIndex = 16;
+            this.machine_idListBox.ValueMember = "Machine_id";
+            // 
+            // bindingNavigator4
+            // 
+            this.bindingNavigator4.AddNewItem = this.bindingNavigatorAddNewItem3;
+            this.bindingNavigator4.BindingSource = this.driverBindingSource3;
+            this.bindingNavigator4.CountItem = this.bindingNavigatorCountItem3;
+            this.bindingNavigator4.DeleteItem = this.bindingNavigatorDeleteItem3;
+            this.bindingNavigator4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem3,
+            this.bindingNavigatorMovePreviousItem3,
+            this.bindingNavigatorSeparator9,
+            this.bindingNavigatorPositionItem3,
+            this.bindingNavigatorCountItem3,
+            this.bindingNavigatorSeparator10,
+            this.bindingNavigatorMoveNextItem3,
+            this.bindingNavigatorMoveLastItem3,
+            this.bindingNavigatorSeparator11,
+            this.bindingNavigatorAddNewItem3,
+            this.bindingNavigatorDeleteItem3});
+            this.bindingNavigator4.Location = new System.Drawing.Point(3, 3);
+            this.bindingNavigator4.MoveFirstItem = this.bindingNavigatorMoveFirstItem3;
+            this.bindingNavigator4.MoveLastItem = this.bindingNavigatorMoveLastItem3;
+            this.bindingNavigator4.MoveNextItem = this.bindingNavigatorMoveNextItem3;
+            this.bindingNavigator4.MovePreviousItem = this.bindingNavigatorMovePreviousItem3;
+            this.bindingNavigator4.Name = "bindingNavigator4";
+            this.bindingNavigator4.PositionItem = this.bindingNavigatorPositionItem3;
+            this.bindingNavigator4.Size = new System.Drawing.Size(1075, 25);
+            this.bindingNavigator4.TabIndex = 14;
+            this.bindingNavigator4.Text = "bindingNavigator4";
+            // 
+            // bindingNavigatorAddNewItem3
+            // 
+            this.bindingNavigatorAddNewItem3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem3.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem3.Image")));
+            this.bindingNavigatorAddNewItem3.Name = "bindingNavigatorAddNewItem3";
+            this.bindingNavigatorAddNewItem3.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem3.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem3.Text = "加入新的";
+            // 
+            // bindingNavigatorCountItem3
+            // 
+            this.bindingNavigatorCountItem3.Name = "bindingNavigatorCountItem3";
+            this.bindingNavigatorCountItem3.Size = new System.Drawing.Size(27, 22);
+            this.bindingNavigatorCountItem3.Text = "/{0}";
+            this.bindingNavigatorCountItem3.ToolTipText = "項目總數";
+            // 
+            // bindingNavigatorDeleteItem3
+            // 
+            this.bindingNavigatorDeleteItem3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem3.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem3.Image")));
+            this.bindingNavigatorDeleteItem3.Name = "bindingNavigatorDeleteItem3";
+            this.bindingNavigatorDeleteItem3.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem3.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem3.Text = "刪除";
+            // 
+            // bindingNavigatorMoveFirstItem3
+            // 
+            this.bindingNavigatorMoveFirstItem3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem3.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem3.Image")));
+            this.bindingNavigatorMoveFirstItem3.Name = "bindingNavigatorMoveFirstItem3";
+            this.bindingNavigatorMoveFirstItem3.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem3.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem3.Text = "移到最前面";
+            // 
+            // bindingNavigatorMovePreviousItem3
+            // 
+            this.bindingNavigatorMovePreviousItem3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem3.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem3.Image")));
+            this.bindingNavigatorMovePreviousItem3.Name = "bindingNavigatorMovePreviousItem3";
+            this.bindingNavigatorMovePreviousItem3.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem3.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem3.Text = "移到上一個";
+            // 
+            // bindingNavigatorSeparator9
+            // 
+            this.bindingNavigatorSeparator9.Name = "bindingNavigatorSeparator9";
+            this.bindingNavigatorSeparator9.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorPositionItem3
+            // 
+            this.bindingNavigatorPositionItem3.AccessibleName = "位置";
+            this.bindingNavigatorPositionItem3.AutoSize = false;
+            this.bindingNavigatorPositionItem3.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
+            this.bindingNavigatorPositionItem3.Name = "bindingNavigatorPositionItem3";
+            this.bindingNavigatorPositionItem3.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem3.Text = "0";
+            this.bindingNavigatorPositionItem3.ToolTipText = "目前的位置";
+            // 
+            // bindingNavigatorSeparator10
+            // 
+            this.bindingNavigatorSeparator10.Name = "bindingNavigatorSeparator10";
+            this.bindingNavigatorSeparator10.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorMoveNextItem3
+            // 
+            this.bindingNavigatorMoveNextItem3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem3.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem3.Image")));
+            this.bindingNavigatorMoveNextItem3.Name = "bindingNavigatorMoveNextItem3";
+            this.bindingNavigatorMoveNextItem3.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem3.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem3.Text = "移到下一個";
+            // 
+            // bindingNavigatorMoveLastItem3
+            // 
+            this.bindingNavigatorMoveLastItem3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem3.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem3.Image")));
+            this.bindingNavigatorMoveLastItem3.Name = "bindingNavigatorMoveLastItem3";
+            this.bindingNavigatorMoveLastItem3.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem3.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem3.Text = "移到最後面";
+            // 
+            // bindingNavigatorSeparator11
+            // 
+            this.bindingNavigatorSeparator11.Name = "bindingNavigatorSeparator11";
+            this.bindingNavigatorSeparator11.Size = new System.Drawing.Size(6, 25);
+            // 
+            // driver_idTextBox1
+            // 
+            this.driver_idTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.driverBindingSource3, "Driver_id", true));
+            this.driver_idTextBox1.Location = new System.Drawing.Point(80, 66);
+            this.driver_idTextBox1.Name = "driver_idTextBox1";
+            this.driver_idTextBox1.Size = new System.Drawing.Size(179, 22);
+            this.driver_idTextBox1.TabIndex = 1;
+            // 
+            // first_nameTextBox1
+            // 
+            this.first_nameTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.driverBindingSource3, "first_name", true));
+            this.first_nameTextBox1.Location = new System.Drawing.Point(80, 94);
+            this.first_nameTextBox1.Name = "first_nameTextBox1";
+            this.first_nameTextBox1.Size = new System.Drawing.Size(179, 22);
+            this.first_nameTextBox1.TabIndex = 3;
+            // 
+            // last_nameTextBox1
+            // 
+            this.last_nameTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.driverBindingSource3, "last_name", true));
+            this.last_nameTextBox1.Location = new System.Drawing.Point(80, 122);
+            this.last_nameTextBox1.Name = "last_nameTextBox1";
+            this.last_nameTextBox1.Size = new System.Drawing.Size(179, 22);
+            this.last_nameTextBox1.TabIndex = 5;
+            // 
+            // genderTextBox
+            // 
+            this.genderTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.driverBindingSource3, "Gender", true));
+            this.genderTextBox.Location = new System.Drawing.Point(80, 150);
+            this.genderTextBox.Name = "genderTextBox";
+            this.genderTextBox.Size = new System.Drawing.Size(179, 22);
+            this.genderTextBox.TabIndex = 7;
+            // 
+            // ageTextBox
+            // 
+            this.ageTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.driverBindingSource3, "age", true));
+            this.ageTextBox.Location = new System.Drawing.Point(80, 178);
+            this.ageTextBox.Name = "ageTextBox";
+            this.ageTextBox.Size = new System.Drawing.Size(179, 22);
+            this.ageTextBox.TabIndex = 9;
+            // 
+            // salaryTextBox
+            // 
+            this.salaryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.driverBindingSource3, "Salary", true));
+            this.salaryTextBox.Location = new System.Drawing.Point(80, 206);
+            this.salaryTextBox.Name = "salaryTextBox";
+            this.salaryTextBox.Size = new System.Drawing.Size(179, 22);
+            this.salaryTextBox.TabIndex = 11;
+            // 
+            // licenseTextBox
+            // 
+            this.licenseTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.driverBindingSource3, "License", true));
+            this.licenseTextBox.Location = new System.Drawing.Point(80, 234);
+            this.licenseTextBox.Name = "licenseTextBox";
+            this.licenseTextBox.Size = new System.Drawing.Size(179, 22);
+            this.licenseTextBox.TabIndex = 13;
+            // 
+            // tabPage13
+            // 
+            this.tabPage13.AutoScroll = true;
+            this.tabPage13.Controls.Add(this.bindingNavigator5);
+            this.tabPage13.Controls.Add(this.driverDataGridView1);
+            this.tabPage13.Location = new System.Drawing.Point(4, 22);
+            this.tabPage13.Name = "tabPage13";
+            this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage13.Size = new System.Drawing.Size(1081, 391);
+            this.tabPage13.TabIndex = 2;
+            this.tabPage13.Text = "driverlist";
+            this.tabPage13.UseVisualStyleBackColor = true;
+            // 
+            // bindingNavigator5
+            // 
+            this.bindingNavigator5.AddNewItem = this.bindingNavigatorAddNewItem4;
+            this.bindingNavigator5.BindingSource = this.driverBindingSource4;
+            this.bindingNavigator5.CountItem = this.bindingNavigatorCountItem4;
+            this.bindingNavigator5.DeleteItem = this.bindingNavigatorDeleteItem4;
+            this.bindingNavigator5.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem4,
+            this.bindingNavigatorMovePreviousItem4,
+            this.bindingNavigatorSeparator12,
+            this.bindingNavigatorPositionItem4,
+            this.bindingNavigatorCountItem4,
+            this.bindingNavigatorSeparator13,
+            this.bindingNavigatorMoveNextItem4,
+            this.bindingNavigatorMoveLastItem4,
+            this.bindingNavigatorSeparator14,
+            this.bindingNavigatorAddNewItem4,
+            this.bindingNavigatorDeleteItem4});
+            this.bindingNavigator5.Location = new System.Drawing.Point(3, 3);
+            this.bindingNavigator5.MoveFirstItem = this.bindingNavigatorMoveFirstItem4;
+            this.bindingNavigator5.MoveLastItem = this.bindingNavigatorMoveLastItem4;
+            this.bindingNavigator5.MoveNextItem = this.bindingNavigatorMoveNextItem4;
+            this.bindingNavigator5.MovePreviousItem = this.bindingNavigatorMovePreviousItem4;
+            this.bindingNavigator5.Name = "bindingNavigator5";
+            this.bindingNavigator5.PositionItem = this.bindingNavigatorPositionItem4;
+            this.bindingNavigator5.Size = new System.Drawing.Size(1075, 25);
+            this.bindingNavigator5.TabIndex = 1;
+            this.bindingNavigator5.Text = "bindingNavigator5";
+            // 
+            // bindingNavigatorAddNewItem4
+            // 
+            this.bindingNavigatorAddNewItem4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem4.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem4.Image")));
+            this.bindingNavigatorAddNewItem4.Name = "bindingNavigatorAddNewItem4";
+            this.bindingNavigatorAddNewItem4.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem4.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem4.Text = "加入新的";
+            // 
+            // driverBindingSource4
+            // 
+            this.driverBindingSource4.DataMember = "Driver";
+            this.driverBindingSource4.DataSource = this.driverlistDataSet;
+            // 
+            // driverlistDataSet
+            // 
+            this.driverlistDataSet.DataSetName = "driverlistDataSet";
+            this.driverlistDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bindingNavigatorCountItem4
+            // 
+            this.bindingNavigatorCountItem4.Name = "bindingNavigatorCountItem4";
+            this.bindingNavigatorCountItem4.Size = new System.Drawing.Size(27, 22);
+            this.bindingNavigatorCountItem4.Text = "/{0}";
+            this.bindingNavigatorCountItem4.ToolTipText = "項目總數";
+            // 
+            // bindingNavigatorDeleteItem4
+            // 
+            this.bindingNavigatorDeleteItem4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem4.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem4.Image")));
+            this.bindingNavigatorDeleteItem4.Name = "bindingNavigatorDeleteItem4";
+            this.bindingNavigatorDeleteItem4.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem4.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem4.Text = "刪除";
+            // 
+            // bindingNavigatorMoveFirstItem4
+            // 
+            this.bindingNavigatorMoveFirstItem4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem4.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem4.Image")));
+            this.bindingNavigatorMoveFirstItem4.Name = "bindingNavigatorMoveFirstItem4";
+            this.bindingNavigatorMoveFirstItem4.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem4.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem4.Text = "移到最前面";
+            // 
+            // bindingNavigatorMovePreviousItem4
+            // 
+            this.bindingNavigatorMovePreviousItem4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem4.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem4.Image")));
+            this.bindingNavigatorMovePreviousItem4.Name = "bindingNavigatorMovePreviousItem4";
+            this.bindingNavigatorMovePreviousItem4.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem4.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem4.Text = "移到上一個";
+            // 
+            // bindingNavigatorSeparator12
+            // 
+            this.bindingNavigatorSeparator12.Name = "bindingNavigatorSeparator12";
+            this.bindingNavigatorSeparator12.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorPositionItem4
+            // 
+            this.bindingNavigatorPositionItem4.AccessibleName = "位置";
+            this.bindingNavigatorPositionItem4.AutoSize = false;
+            this.bindingNavigatorPositionItem4.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
+            this.bindingNavigatorPositionItem4.Name = "bindingNavigatorPositionItem4";
+            this.bindingNavigatorPositionItem4.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem4.Text = "0";
+            this.bindingNavigatorPositionItem4.ToolTipText = "目前的位置";
+            // 
+            // bindingNavigatorSeparator13
+            // 
+            this.bindingNavigatorSeparator13.Name = "bindingNavigatorSeparator13";
+            this.bindingNavigatorSeparator13.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorMoveNextItem4
+            // 
+            this.bindingNavigatorMoveNextItem4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem4.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem4.Image")));
+            this.bindingNavigatorMoveNextItem4.Name = "bindingNavigatorMoveNextItem4";
+            this.bindingNavigatorMoveNextItem4.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem4.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem4.Text = "移到下一個";
+            // 
+            // bindingNavigatorMoveLastItem4
+            // 
+            this.bindingNavigatorMoveLastItem4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem4.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem4.Image")));
+            this.bindingNavigatorMoveLastItem4.Name = "bindingNavigatorMoveLastItem4";
+            this.bindingNavigatorMoveLastItem4.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem4.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem4.Text = "移到最後面";
+            // 
+            // bindingNavigatorSeparator14
+            // 
+            this.bindingNavigatorSeparator14.Name = "bindingNavigatorSeparator14";
+            this.bindingNavigatorSeparator14.Size = new System.Drawing.Size(6, 25);
+            // 
+            // driverDataGridView1
+            // 
+            this.driverDataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.driverDataGridView1.AutoGenerateColumns = false;
+            this.driverDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.driverDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn88,
+            this.dataGridViewTextBoxColumn89,
+            this.dataGridViewTextBoxColumn90,
+            this.dataGridViewTextBoxColumn91,
+            this.dataGridViewTextBoxColumn92,
+            this.dataGridViewTextBoxColumn93,
+            this.dataGridViewTextBoxColumn94});
+            this.driverDataGridView1.DataSource = this.driverBindingSource4;
+            this.driverDataGridView1.Location = new System.Drawing.Point(6, 31);
+            this.driverDataGridView1.Name = "driverDataGridView1";
+            this.driverDataGridView1.RowTemplate.Height = 24;
+            this.driverDataGridView1.Size = new System.Drawing.Size(1072, 354);
+            this.driverDataGridView1.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn88
+            // 
+            this.dataGridViewTextBoxColumn88.DataPropertyName = "Driver_id";
+            this.dataGridViewTextBoxColumn88.HeaderText = "Driver_id";
+            this.dataGridViewTextBoxColumn88.Name = "dataGridViewTextBoxColumn88";
+            this.dataGridViewTextBoxColumn88.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn89
+            // 
+            this.dataGridViewTextBoxColumn89.DataPropertyName = "first_name";
+            this.dataGridViewTextBoxColumn89.HeaderText = "first_name";
+            this.dataGridViewTextBoxColumn89.Name = "dataGridViewTextBoxColumn89";
+            // 
+            // dataGridViewTextBoxColumn90
+            // 
+            this.dataGridViewTextBoxColumn90.DataPropertyName = "last_name";
+            this.dataGridViewTextBoxColumn90.HeaderText = "last_name";
+            this.dataGridViewTextBoxColumn90.Name = "dataGridViewTextBoxColumn90";
+            // 
+            // dataGridViewTextBoxColumn91
+            // 
+            this.dataGridViewTextBoxColumn91.DataPropertyName = "Gender";
+            this.dataGridViewTextBoxColumn91.HeaderText = "Gender";
+            this.dataGridViewTextBoxColumn91.Name = "dataGridViewTextBoxColumn91";
+            // 
+            // dataGridViewTextBoxColumn92
+            // 
+            this.dataGridViewTextBoxColumn92.DataPropertyName = "age";
+            this.dataGridViewTextBoxColumn92.HeaderText = "age";
+            this.dataGridViewTextBoxColumn92.Name = "dataGridViewTextBoxColumn92";
+            // 
+            // dataGridViewTextBoxColumn93
+            // 
+            this.dataGridViewTextBoxColumn93.DataPropertyName = "Salary";
+            this.dataGridViewTextBoxColumn93.HeaderText = "Salary";
+            this.dataGridViewTextBoxColumn93.Name = "dataGridViewTextBoxColumn93";
+            // 
+            // dataGridViewTextBoxColumn94
+            // 
+            this.dataGridViewTextBoxColumn94.DataPropertyName = "License";
+            this.dataGridViewTextBoxColumn94.HeaderText = "License";
+            this.dataGridViewTextBoxColumn94.Name = "dataGridViewTextBoxColumn94";
+            // 
+            // tabPage14
+            // 
+            this.tabPage14.Controls.Add(this.bindingNavigator6);
+            this.tabPage14.Controls.Add(this.driverdescriptionDataGridView);
+            this.tabPage14.Controls.Add(driver_idLabel3);
+            this.tabPage14.Controls.Add(this.driver_idTextBox3);
+            this.tabPage14.Controls.Add(driver_idLabel2);
+            this.tabPage14.Controls.Add(this.driver_idTextBox2);
+            this.tabPage14.Controls.Add(first_nameLabel2);
+            this.tabPage14.Controls.Add(this.first_nameTextBox2);
+            this.tabPage14.Controls.Add(last_nameLabel2);
+            this.tabPage14.Controls.Add(this.last_nameTextBox2);
+            this.tabPage14.Controls.Add(category_idLabel1);
+            this.tabPage14.Controls.Add(this.category_idTextBox1);
+            this.tabPage14.Controls.Add(titleLabel2);
+            this.tabPage14.Controls.Add(this.titleTextBox1);
+            this.tabPage14.Controls.Add(priceLabel2);
+            this.tabPage14.Controls.Add(this.priceTextBox1);
+            this.tabPage14.Controls.Add(locationLabel3);
+            this.tabPage14.Controls.Add(this.locationTextBox1);
+            this.tabPage14.Location = new System.Drawing.Point(4, 22);
+            this.tabPage14.Name = "tabPage14";
+            this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage14.Size = new System.Drawing.Size(1081, 391);
+            this.tabPage14.TabIndex = 3;
+            this.tabPage14.Text = "editdrivermachines";
+            this.tabPage14.UseVisualStyleBackColor = true;
+            // 
+            // bindingNavigator6
+            // 
+            this.bindingNavigator6.AddNewItem = this.bindingNavigatorAddNewItem5;
+            this.bindingNavigator6.BindingSource = this.driverBindingSource4;
+            this.bindingNavigator6.CountItem = this.bindingNavigatorCountItem5;
+            this.bindingNavigator6.DeleteItem = this.bindingNavigatorDeleteItem5;
+            this.bindingNavigator6.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem5,
+            this.bindingNavigatorMovePreviousItem5,
+            this.bindingNavigatorSeparator15,
+            this.bindingNavigatorPositionItem5,
+            this.bindingNavigatorCountItem5,
+            this.bindingNavigatorSeparator16,
+            this.bindingNavigatorMoveNextItem5,
+            this.bindingNavigatorMoveLastItem5,
+            this.bindingNavigatorSeparator17,
+            this.bindingNavigatorAddNewItem5,
+            this.bindingNavigatorDeleteItem5});
+            this.bindingNavigator6.Location = new System.Drawing.Point(3, 3);
+            this.bindingNavigator6.MoveFirstItem = this.bindingNavigatorMoveFirstItem5;
+            this.bindingNavigator6.MoveLastItem = this.bindingNavigatorMoveLastItem5;
+            this.bindingNavigator6.MoveNextItem = this.bindingNavigatorMoveNextItem5;
+            this.bindingNavigator6.MovePreviousItem = this.bindingNavigatorMovePreviousItem5;
+            this.bindingNavigator6.Name = "bindingNavigator6";
+            this.bindingNavigator6.PositionItem = this.bindingNavigatorPositionItem5;
+            this.bindingNavigator6.Size = new System.Drawing.Size(1075, 25);
+            this.bindingNavigator6.TabIndex = 17;
+            this.bindingNavigator6.Text = "bindingNavigator6";
+            // 
+            // bindingNavigatorAddNewItem5
+            // 
+            this.bindingNavigatorAddNewItem5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem5.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem5.Image")));
+            this.bindingNavigatorAddNewItem5.Name = "bindingNavigatorAddNewItem5";
+            this.bindingNavigatorAddNewItem5.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem5.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem5.Text = "加入新的";
+            // 
+            // bindingNavigatorCountItem5
+            // 
+            this.bindingNavigatorCountItem5.Name = "bindingNavigatorCountItem5";
+            this.bindingNavigatorCountItem5.Size = new System.Drawing.Size(27, 22);
+            this.bindingNavigatorCountItem5.Text = "/{0}";
+            this.bindingNavigatorCountItem5.ToolTipText = "項目總數";
+            // 
+            // bindingNavigatorDeleteItem5
+            // 
+            this.bindingNavigatorDeleteItem5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem5.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem5.Image")));
+            this.bindingNavigatorDeleteItem5.Name = "bindingNavigatorDeleteItem5";
+            this.bindingNavigatorDeleteItem5.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem5.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem5.Text = "刪除";
+            // 
+            // bindingNavigatorMoveFirstItem5
+            // 
+            this.bindingNavigatorMoveFirstItem5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem5.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem5.Image")));
+            this.bindingNavigatorMoveFirstItem5.Name = "bindingNavigatorMoveFirstItem5";
+            this.bindingNavigatorMoveFirstItem5.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem5.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem5.Text = "移到最前面";
+            // 
+            // bindingNavigatorMovePreviousItem5
+            // 
+            this.bindingNavigatorMovePreviousItem5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem5.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem5.Image")));
+            this.bindingNavigatorMovePreviousItem5.Name = "bindingNavigatorMovePreviousItem5";
+            this.bindingNavigatorMovePreviousItem5.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem5.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem5.Text = "移到上一個";
+            // 
+            // bindingNavigatorSeparator15
+            // 
+            this.bindingNavigatorSeparator15.Name = "bindingNavigatorSeparator15";
+            this.bindingNavigatorSeparator15.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorPositionItem5
+            // 
+            this.bindingNavigatorPositionItem5.AccessibleName = "位置";
+            this.bindingNavigatorPositionItem5.AutoSize = false;
+            this.bindingNavigatorPositionItem5.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
+            this.bindingNavigatorPositionItem5.Name = "bindingNavigatorPositionItem5";
+            this.bindingNavigatorPositionItem5.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem5.Text = "0";
+            this.bindingNavigatorPositionItem5.ToolTipText = "目前的位置";
+            // 
+            // bindingNavigatorSeparator16
+            // 
+            this.bindingNavigatorSeparator16.Name = "bindingNavigatorSeparator16";
+            this.bindingNavigatorSeparator16.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorMoveNextItem5
+            // 
+            this.bindingNavigatorMoveNextItem5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem5.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem5.Image")));
+            this.bindingNavigatorMoveNextItem5.Name = "bindingNavigatorMoveNextItem5";
+            this.bindingNavigatorMoveNextItem5.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem5.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem5.Text = "移到下一個";
+            // 
+            // bindingNavigatorMoveLastItem5
+            // 
+            this.bindingNavigatorMoveLastItem5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem5.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem5.Image")));
+            this.bindingNavigatorMoveLastItem5.Name = "bindingNavigatorMoveLastItem5";
+            this.bindingNavigatorMoveLastItem5.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem5.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem5.Text = "移到最後面";
+            // 
+            // bindingNavigatorSeparator17
+            // 
+            this.bindingNavigatorSeparator17.Name = "bindingNavigatorSeparator17";
+            this.bindingNavigatorSeparator17.Size = new System.Drawing.Size(6, 25);
+            // 
+            // driverdescriptionDataGridView
+            // 
+            this.driverdescriptionDataGridView.AutoGenerateColumns = false;
+            this.driverdescriptionDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.driverdescriptionDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn95,
+            this.dataGridViewTextBoxColumn96,
+            this.dataGridViewTextBoxColumn97,
+            this.dataGridViewTextBoxColumn98,
+            this.dataGridViewTextBoxColumn99,
+            this.dataGridViewTextBoxColumn100,
+            this.dataGridViewTextBoxColumn101,
+            this.dataGridViewTextBoxColumn102});
+            this.driverdescriptionDataGridView.DataSource = this.driverdescriptionBindingSource;
+            this.driverdescriptionDataGridView.Location = new System.Drawing.Point(299, 58);
+            this.driverdescriptionDataGridView.Name = "driverdescriptionDataGridView";
+            this.driverdescriptionDataGridView.RowTemplate.Height = 24;
+            this.driverdescriptionDataGridView.Size = new System.Drawing.Size(763, 290);
+            this.driverdescriptionDataGridView.TabIndex = 16;
+            // 
+            // dataGridViewTextBoxColumn95
+            // 
+            this.dataGridViewTextBoxColumn95.DataPropertyName = "Driver_id";
+            this.dataGridViewTextBoxColumn95.HeaderText = "Driver_id";
+            this.dataGridViewTextBoxColumn95.Name = "dataGridViewTextBoxColumn95";
+            this.dataGridViewTextBoxColumn95.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn96
+            // 
+            this.dataGridViewTextBoxColumn96.DataPropertyName = "first_name";
+            this.dataGridViewTextBoxColumn96.HeaderText = "first_name";
+            this.dataGridViewTextBoxColumn96.Name = "dataGridViewTextBoxColumn96";
+            // 
+            // dataGridViewTextBoxColumn97
+            // 
+            this.dataGridViewTextBoxColumn97.DataPropertyName = "last_name";
+            this.dataGridViewTextBoxColumn97.HeaderText = "last_name";
+            this.dataGridViewTextBoxColumn97.Name = "dataGridViewTextBoxColumn97";
+            // 
+            // dataGridViewTextBoxColumn98
+            // 
+            this.dataGridViewTextBoxColumn98.DataPropertyName = "category_id";
+            this.dataGridViewTextBoxColumn98.HeaderText = "category_id";
+            this.dataGridViewTextBoxColumn98.Name = "dataGridViewTextBoxColumn98";
+            // 
+            // dataGridViewTextBoxColumn99
+            // 
+            this.dataGridViewTextBoxColumn99.DataPropertyName = "title";
+            this.dataGridViewTextBoxColumn99.HeaderText = "title";
+            this.dataGridViewTextBoxColumn99.Name = "dataGridViewTextBoxColumn99";
+            // 
+            // dataGridViewTextBoxColumn100
+            // 
+            this.dataGridViewTextBoxColumn100.DataPropertyName = "description";
+            this.dataGridViewTextBoxColumn100.HeaderText = "description";
+            this.dataGridViewTextBoxColumn100.Name = "dataGridViewTextBoxColumn100";
+            // 
+            // dataGridViewTextBoxColumn101
+            // 
+            this.dataGridViewTextBoxColumn101.DataPropertyName = "price";
+            this.dataGridViewTextBoxColumn101.HeaderText = "price";
+            this.dataGridViewTextBoxColumn101.Name = "dataGridViewTextBoxColumn101";
+            // 
+            // dataGridViewTextBoxColumn102
+            // 
+            this.dataGridViewTextBoxColumn102.DataPropertyName = "location";
+            this.dataGridViewTextBoxColumn102.HeaderText = "location";
+            this.dataGridViewTextBoxColumn102.Name = "dataGridViewTextBoxColumn102";
+            // 
+            // driverdescriptionBindingSource
+            // 
+            this.driverdescriptionBindingSource.DataMember = "Driverdescription";
+            this.driverdescriptionBindingSource.DataSource = this.editdrivermachinesDataSet;
+            // 
+            // editdrivermachinesDataSet
+            // 
+            this.editdrivermachinesDataSet.DataSetName = "editdrivermachinesDataSet";
+            this.editdrivermachinesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // driver_idTextBox3
+            // 
+            this.driver_idTextBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.lastdriver_idBindingSource, "Driver_id", true));
+            this.driver_idTextBox3.Location = new System.Drawing.Point(79, 58);
+            this.driver_idTextBox3.Name = "driver_idTextBox3";
+            this.driver_idTextBox3.Size = new System.Drawing.Size(100, 22);
+            this.driver_idTextBox3.TabIndex = 15;
+            // 
+            // lastdriver_idBindingSource
+            // 
+            this.lastdriver_idBindingSource.DataMember = "Lastdriver_id";
+            this.lastdriver_idBindingSource.DataSource = this.editdrivermachinesDataSet;
+            // 
+            // driver_idTextBox2
+            // 
+            this.driver_idTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.driverMachinesBindingSource, "Driver_id", true));
+            this.driver_idTextBox2.Location = new System.Drawing.Point(89, 86);
+            this.driver_idTextBox2.Name = "driver_idTextBox2";
+            this.driver_idTextBox2.Size = new System.Drawing.Size(179, 22);
+            this.driver_idTextBox2.TabIndex = 1;
+            // 
+            // driverMachinesBindingSource
+            // 
+            this.driverMachinesBindingSource.DataMember = "DriverMachines";
+            this.driverMachinesBindingSource.DataSource = this.editdrivermachinesDataSet;
+            // 
+            // first_nameTextBox2
+            // 
+            this.first_nameTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.driverMachinesBindingSource, "first_name", true));
+            this.first_nameTextBox2.Location = new System.Drawing.Point(89, 114);
+            this.first_nameTextBox2.Name = "first_nameTextBox2";
+            this.first_nameTextBox2.Size = new System.Drawing.Size(179, 22);
+            this.first_nameTextBox2.TabIndex = 3;
+            // 
+            // last_nameTextBox2
+            // 
+            this.last_nameTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.driverMachinesBindingSource, "last_name", true));
+            this.last_nameTextBox2.Location = new System.Drawing.Point(89, 142);
+            this.last_nameTextBox2.Name = "last_nameTextBox2";
+            this.last_nameTextBox2.Size = new System.Drawing.Size(179, 22);
+            this.last_nameTextBox2.TabIndex = 5;
+            // 
+            // category_idTextBox1
+            // 
+            this.category_idTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.driverMachinesBindingSource, "category_id", true));
+            this.category_idTextBox1.Location = new System.Drawing.Point(89, 170);
+            this.category_idTextBox1.Name = "category_idTextBox1";
+            this.category_idTextBox1.Size = new System.Drawing.Size(179, 22);
+            this.category_idTextBox1.TabIndex = 7;
+            // 
+            // titleTextBox1
+            // 
+            this.titleTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.driverMachinesBindingSource, "title", true));
+            this.titleTextBox1.Location = new System.Drawing.Point(89, 198);
+            this.titleTextBox1.Name = "titleTextBox1";
+            this.titleTextBox1.Size = new System.Drawing.Size(179, 22);
+            this.titleTextBox1.TabIndex = 9;
+            // 
+            // priceTextBox1
+            // 
+            this.priceTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.driverMachinesBindingSource, "price", true));
+            this.priceTextBox1.Location = new System.Drawing.Point(89, 226);
+            this.priceTextBox1.Name = "priceTextBox1";
+            this.priceTextBox1.Size = new System.Drawing.Size(179, 22);
+            this.priceTextBox1.TabIndex = 11;
+            // 
+            // locationTextBox1
+            // 
+            this.locationTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.driverMachinesBindingSource, "location", true));
+            this.locationTextBox1.Location = new System.Drawing.Point(89, 254);
+            this.locationTextBox1.Name = "locationTextBox1";
+            this.locationTextBox1.Size = new System.Drawing.Size(179, 22);
+            this.locationTextBox1.TabIndex = 13;
             // 
             // ordersBindingSource2
             // 
@@ -3548,48 +5066,8 @@ namespace hw5v3
             // tableAdapterManager5
             // 
             this.tableAdapterManager5.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager5.Connection = null;
             this.tableAdapterManager5.UpdateOrder = hw5v3.machine_key_search_DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // fillByToolStrip
-            // 
-            this.fillByToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.keywordToolStripLabel,
-            this.keywordToolStripTextBox,
-            this.fillByToolStripButton});
-            this.fillByToolStrip.Location = new System.Drawing.Point(3, 3);
-            this.fillByToolStrip.Name = "fillByToolStrip";
-            this.fillByToolStrip.Size = new System.Drawing.Size(775, 25);
-            this.fillByToolStrip.TabIndex = 1;
-            this.fillByToolStrip.Text = "fillByToolStrip";
-            // 
-            // keywordToolStripLabel
-            // 
-            this.keywordToolStripLabel.Name = "keywordToolStripLabel";
-            this.keywordToolStripLabel.Size = new System.Drawing.Size(58, 22);
-            this.keywordToolStripLabel.Text = "keyword:";
-            // 
-            // keywordToolStripTextBox
-            // 
-            this.keywordToolStripTextBox.Name = "keywordToolStripTextBox";
-            this.keywordToolStripTextBox.Size = new System.Drawing.Size(100, 25);
-            // 
-            // fillByToolStripButton
-            // 
-            this.fillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.fillByToolStripButton.Name = "fillByToolStripButton";
-            this.fillByToolStripButton.Size = new System.Drawing.Size(47, 22);
-            this.fillByToolStripButton.Text = "search";
-            this.fillByToolStripButton.Click += new System.EventHandler(this.fillByToolStripButton_Click);
-            // 
-            // mation_location_DataSet_detail
-            // 
-            this.mation_location_DataSet_detail.DataSetName = "mation_location_DataSet_detail";
-            this.mation_location_DataSet_detail.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // machinesBindingSource7
-            // 
-            this.machinesBindingSource7.DataMember = "Machines";
-            this.machinesBindingSource7.DataSource = this.mation_location_DataSet_detail;
             // 
             // machinesTableAdapter7
             // 
@@ -3601,244 +5079,79 @@ namespace hw5v3
             this.tableAdapterManager6.MachinesTableAdapter = this.machinesTableAdapter7;
             this.tableAdapterManager6.UpdateOrder = hw5v3.mation_location_DataSet_detailTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // fillToolStrip
-            // 
-            this.fillToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.machine_idToolStripLabel,
-            this.machine_idToolStripTextBox,
-            this.fillToolStripButton});
-            this.fillToolStrip.Location = new System.Drawing.Point(3, 3);
-            this.fillToolStrip.Name = "fillToolStrip";
-            this.fillToolStrip.Size = new System.Drawing.Size(775, 25);
-            this.fillToolStrip.TabIndex = 1;
-            this.fillToolStrip.Text = "fillToolStrip";
-            // 
-            // machine_idToolStripLabel
-            // 
-            this.machine_idToolStripLabel.Name = "machine_idToolStripLabel";
-            this.machine_idToolStripLabel.Size = new System.Drawing.Size(75, 22);
-            this.machine_idToolStripLabel.Text = "Machine_id:";
-            // 
-            // machine_idToolStripTextBox
-            // 
-            this.machine_idToolStripTextBox.Name = "machine_idToolStripTextBox";
-            this.machine_idToolStripTextBox.Size = new System.Drawing.Size(100, 23);
-            // 
-            // fillToolStripButton
-            // 
-            this.fillToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.fillToolStripButton.Name = "fillToolStripButton";
-            this.fillToolStripButton.Size = new System.Drawing.Size(47, 22);
-            this.fillToolStripButton.Text = "search";
-            this.fillToolStripButton.Click += new System.EventHandler(this.fillToolStripButton_Click);
-            // 
-            // machine_idLabel
-            // 
-            machine_idLabel.AutoSize = true;
-            machine_idLabel.Location = new System.Drawing.Point(255, 59);
-            machine_idLabel.Name = "machine_idLabel";
-            machine_idLabel.Size = new System.Drawing.Size(60, 12);
-            machine_idLabel.TabIndex = 0;
-            machine_idLabel.Text = "Machine id:";
-            // 
-            // machine_idTextBox
-            // 
-            this.machine_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "Machine_id", true));
-            this.machine_idTextBox.Location = new System.Drawing.Point(348, 56);
-            this.machine_idTextBox.Name = "machine_idTextBox";
-            this.machine_idTextBox.Size = new System.Drawing.Size(367, 22);
-            this.machine_idTextBox.TabIndex = 1;
-            // 
-            // category_idLabel
-            // 
-            category_idLabel.AutoSize = true;
-            category_idLabel.Location = new System.Drawing.Point(255, 87);
-            category_idLabel.Name = "category_idLabel";
-            category_idLabel.Size = new System.Drawing.Size(60, 12);
-            category_idLabel.TabIndex = 2;
-            category_idLabel.Text = "category id:";
-            // 
-            // category_idTextBox
-            // 
-            this.category_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "category_id", true));
-            this.category_idTextBox.Location = new System.Drawing.Point(348, 84);
-            this.category_idTextBox.Name = "category_idTextBox";
-            this.category_idTextBox.Size = new System.Drawing.Size(367, 22);
-            this.category_idTextBox.TabIndex = 3;
-            // 
-            // driver_idLabel
-            // 
-            driver_idLabel.AutoSize = true;
-            driver_idLabel.Location = new System.Drawing.Point(255, 115);
-            driver_idLabel.Name = "driver_idLabel";
-            driver_idLabel.Size = new System.Drawing.Size(50, 12);
-            driver_idLabel.TabIndex = 4;
-            driver_idLabel.Text = "Driver id:";
-            // 
-            // driver_idTextBox
-            // 
-            this.driver_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "Driver_id", true));
-            this.driver_idTextBox.Location = new System.Drawing.Point(348, 112);
-            this.driver_idTextBox.Name = "driver_idTextBox";
-            this.driver_idTextBox.Size = new System.Drawing.Size(367, 22);
-            this.driver_idTextBox.TabIndex = 5;
-            // 
-            // yearsLabel
-            // 
-            yearsLabel.AutoSize = true;
-            yearsLabel.Location = new System.Drawing.Point(255, 143);
-            yearsLabel.Name = "yearsLabel";
-            yearsLabel.Size = new System.Drawing.Size(32, 12);
-            yearsLabel.TabIndex = 6;
-            yearsLabel.Text = "years:";
-            // 
-            // yearsTextBox
-            // 
-            this.yearsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "years", true));
-            this.yearsTextBox.Location = new System.Drawing.Point(348, 140);
-            this.yearsTextBox.Name = "yearsTextBox";
-            this.yearsTextBox.Size = new System.Drawing.Size(367, 22);
-            this.yearsTextBox.TabIndex = 7;
-            // 
-            // priceLabel1
-            // 
-            priceLabel1.AutoSize = true;
-            priceLabel1.Location = new System.Drawing.Point(255, 171);
-            priceLabel1.Name = "priceLabel1";
-            priceLabel1.Size = new System.Drawing.Size(31, 12);
-            priceLabel1.TabIndex = 8;
-            priceLabel1.Text = "price:";
-            // 
-            // priceTextBox
-            // 
-            this.priceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "price", true));
-            this.priceTextBox.Location = new System.Drawing.Point(348, 168);
-            this.priceTextBox.Name = "priceTextBox";
-            this.priceTextBox.Size = new System.Drawing.Size(367, 22);
-            this.priceTextBox.TabIndex = 9;
-            // 
-            // titleLabel1
-            // 
-            titleLabel1.AutoSize = true;
-            titleLabel1.Location = new System.Drawing.Point(255, 199);
-            titleLabel1.Name = "titleLabel1";
-            titleLabel1.Size = new System.Drawing.Size(25, 12);
-            titleLabel1.TabIndex = 10;
-            titleLabel1.Text = "title:";
-            // 
-            // titleTextBox
-            // 
-            this.titleTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "title", true));
-            this.titleTextBox.Location = new System.Drawing.Point(348, 196);
-            this.titleTextBox.Name = "titleTextBox";
-            this.titleTextBox.Size = new System.Drawing.Size(367, 22);
-            this.titleTextBox.TabIndex = 11;
-            // 
-            // locationLabel1
-            // 
-            locationLabel1.AutoSize = true;
-            locationLabel1.Location = new System.Drawing.Point(255, 227);
-            locationLabel1.Name = "locationLabel1";
-            locationLabel1.Size = new System.Drawing.Size(45, 12);
-            locationLabel1.TabIndex = 12;
-            locationLabel1.Text = "location:";
-            // 
-            // locationTextBox
-            // 
-            this.locationTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "location", true));
-            this.locationTextBox.Location = new System.Drawing.Point(348, 224);
-            this.locationTextBox.Name = "locationTextBox";
-            this.locationTextBox.Size = new System.Drawing.Size(367, 22);
-            this.locationTextBox.TabIndex = 13;
-            // 
-            // countryLabel
-            // 
-            countryLabel.AutoSize = true;
-            countryLabel.Location = new System.Drawing.Point(255, 255);
-            countryLabel.Name = "countryLabel";
-            countryLabel.Size = new System.Drawing.Size(44, 12);
-            countryLabel.TabIndex = 14;
-            countryLabel.Text = "country:";
-            // 
-            // countryTextBox
-            // 
-            this.countryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "country", true));
-            this.countryTextBox.Location = new System.Drawing.Point(348, 252);
-            this.countryTextBox.Name = "countryTextBox";
-            this.countryTextBox.Size = new System.Drawing.Size(367, 22);
-            this.countryTextBox.TabIndex = 15;
-            // 
-            // conditionLabel
-            // 
-            conditionLabel.AutoSize = true;
-            conditionLabel.Location = new System.Drawing.Point(255, 283);
-            conditionLabel.Name = "conditionLabel";
-            conditionLabel.Size = new System.Drawing.Size(52, 12);
-            conditionLabel.TabIndex = 16;
-            conditionLabel.Text = "condition:";
-            // 
-            // conditionTextBox
-            // 
-            this.conditionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "condition", true));
-            this.conditionTextBox.Location = new System.Drawing.Point(348, 280);
-            this.conditionTextBox.Name = "conditionTextBox";
-            this.conditionTextBox.Size = new System.Drawing.Size(367, 22);
-            this.conditionTextBox.TabIndex = 17;
-            // 
-            // payment_MethodLabel
-            // 
-            payment_MethodLabel.AutoSize = true;
-            payment_MethodLabel.Location = new System.Drawing.Point(255, 311);
-            payment_MethodLabel.Name = "payment_MethodLabel";
-            payment_MethodLabel.Size = new System.Drawing.Size(87, 12);
-            payment_MethodLabel.TabIndex = 18;
-            payment_MethodLabel.Text = "Payment Method:";
-            // 
-            // payment_MethodTextBox
-            // 
-            this.payment_MethodTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource7, "Payment_Method", true));
-            this.payment_MethodTextBox.Location = new System.Drawing.Point(348, 308);
-            this.payment_MethodTextBox.Name = "payment_MethodTextBox";
-            this.payment_MethodTextBox.Size = new System.Drawing.Size(367, 22);
-            this.payment_MethodTextBox.TabIndex = 19;
-            // 
-            // listBox1
-            // 
-            this.listBox1.DataSource = this.machinesBindingSource8;
-            this.listBox1.DisplayMember = "location";
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 12;
-            this.listBox1.Location = new System.Drawing.Point(34, 56);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(187, 268);
-            this.listBox1.TabIndex = 20;
-            this.listBox1.ValueMember = "Machine_id";
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
-            // 
-            // machine_location_DataSet
-            // 
-            this.machine_location_DataSet.DataSetName = "machine_location_DataSet";
-            this.machine_location_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // machinelocationDataSetBindingSource
             // 
             this.machinelocationDataSetBindingSource.DataSource = this.machine_location_DataSet;
             this.machinelocationDataSetBindingSource.Position = 0;
             // 
-            // machinesBindingSource8
-            // 
-            this.machinesBindingSource8.DataMember = "Machines";
-            this.machinesBindingSource8.DataSource = this.machine_location_DataSet;
-            // 
             // machinesTableAdapter8
             // 
             this.machinesTableAdapter8.ClearBeforeFill = true;
+            // 
+            // driverTableAdapter1
+            // 
+            this.driverTableAdapter1.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager7
+            // 
+            this.tableAdapterManager7.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager7.DriverTableAdapter = this.driverTableAdapter1;
+            this.tableAdapterManager7.UpdateOrder = hw5v3.driverkeywordDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // driverTableAdapter2
+            // 
+            this.driverTableAdapter2.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager8
+            // 
+            this.tableAdapterManager8.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager8.CategoriesTableAdapter = null;
+            this.tableAdapterManager8.DriverTableAdapter = this.driverTableAdapter2;
+            this.tableAdapterManager8.MachinesTableAdapter = null;
+            this.tableAdapterManager8.UpdateOrder = hw5v3.driversearchDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // dataTable1TableAdapter1
+            // 
+            this.dataTable1TableAdapter1.ClearBeforeFill = true;
+            // 
+            // driverDataTable1BindingSource
+            // 
+            this.driverDataTable1BindingSource.DataMember = "Driver_DataTable1";
+            this.driverDataTable1BindingSource.DataSource = this.driverBindingSource3;
+            // 
+            // driverTableAdapter3
+            // 
+            this.driverTableAdapter3.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager9
+            // 
+            this.tableAdapterManager9.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager9.DriverTableAdapter = this.driverTableAdapter3;
+            this.tableAdapterManager9.UpdateOrder = hw5v3.driverlistDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // driverMachinesTableAdapter
+            // 
+            this.driverMachinesTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager10
+            // 
+            this.tableAdapterManager10.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager10.Connection = null;
+            this.tableAdapterManager10.UpdateOrder = hw5v3.editdrivermachinesDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // lastdriver_idTableAdapter
+            // 
+            this.lastdriver_idTableAdapter.ClearBeforeFill = true;
+            // 
+            // driverdescriptionTableAdapter
+            // 
+            this.driverdescriptionTableAdapter.ClearBeforeFill = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1103, 450);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -3856,6 +5169,8 @@ namespace hw5v3
             ((System.ComponentModel.ISupportInitialize)(this.machinesDataGridView)).EndInit();
             this.key_search_tabPage11.ResumeLayout(false);
             this.key_search_tabPage11.PerformLayout();
+            this.fillByToolStrip.ResumeLayout(false);
+            this.fillByToolStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.machinesDataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.machine_key_search_DataSet)).EndInit();
@@ -3874,6 +5189,12 @@ namespace hw5v3
             ((System.ComponentModel.ISupportInitialize)(this.driverBindingSource1)).EndInit();
             this.tabPage10.ResumeLayout(false);
             this.tabPage10.PerformLayout();
+            this.fillToolStrip.ResumeLayout(false);
+            this.fillToolStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machine_location_DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mation_location_DataSet_detail)).EndInit();
             this.service.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -3941,6 +5262,44 @@ namespace hw5v3
             ((System.ComponentModel.ISupportInitialize)(this.nameBindingSource12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.businessDataSet_Tim52)).EndInit();
+            this.driver.ResumeLayout(false);
+            this.tabControl3.ResumeLayout(false);
+            this.tabPage11.ResumeLayout(false);
+            this.tabPage11.PerformLayout();
+            this.fillByToolStrip1.ResumeLayout(false);
+            this.fillByToolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.driverDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverkeywordDataSet)).EndInit();
+            this.tabPage12.ResumeLayout(false);
+            this.tabPage12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driversearchDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverDataTable1BindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverDataTable1BindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverDataTable1BindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator4)).EndInit();
+            this.bindingNavigator4.ResumeLayout(false);
+            this.bindingNavigator4.PerformLayout();
+            this.tabPage13.ResumeLayout(false);
+            this.tabPage13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator5)).EndInit();
+            this.bindingNavigator5.ResumeLayout(false);
+            this.bindingNavigator5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.driverBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverlistDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverDataGridView1)).EndInit();
+            this.tabPage14.ResumeLayout(false);
+            this.tabPage14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator6)).EndInit();
+            this.bindingNavigator6.ResumeLayout(false);
+            this.bindingNavigator6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.driverdescriptionDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverdescriptionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.editdrivermachinesDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lastdriver_idBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverMachinesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nameBindingSource7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.staffBindingSource1)).EndInit();
@@ -3971,15 +5330,8 @@ namespace hw5v3
             ((System.ComponentModel.ISupportInitialize)(this.nameBindingSource10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKOrdersMachine34C8D9D1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKOrdersMachine34C8D9D1BindingSource1)).EndInit();
-            this.fillByToolStrip.ResumeLayout(false);
-            this.fillByToolStrip.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mation_location_DataSet_detail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource7)).EndInit();
-            this.fillToolStrip.ResumeLayout(false);
-            this.fillToolStrip.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.machine_location_DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.machinelocationDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverDataTable1BindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -4365,6 +5717,120 @@ namespace hw5v3
         private System.Windows.Forms.TextBox payment_MethodTextBox;
         private System.Windows.Forms.BindingSource machinesBindingSource8;
         private machine_location_DataSetTableAdapters.MachinesTableAdapter machinesTableAdapter8;
+        private System.Windows.Forms.TabControl tabControl3;
+        private System.Windows.Forms.TabPage tabPage11;
+        private System.Windows.Forms.TabPage tabPage12;
+        private driverkeywordDataSet driverkeywordDataSet;
+        private System.Windows.Forms.BindingSource driverBindingSource2;
+        private driverkeywordDataSetTableAdapters.DriverTableAdapter driverTableAdapter1;
+        private driverkeywordDataSetTableAdapters.TableAdapterManager tableAdapterManager7;
+        private System.Windows.Forms.DataGridView driverDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn81;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn82;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn83;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn84;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn85;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn86;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn87;
+        private System.Windows.Forms.ToolStrip fillByToolStrip1;
+        private System.Windows.Forms.ToolStripLabel kEYWORDToolStripLabel1;
+        private System.Windows.Forms.ToolStripTextBox kEYWORDToolStripTextBox1;
+        private System.Windows.Forms.ToolStripButton fillByToolStripButton1;
+        private driversearchDataSet driversearchDataSet;
+        private System.Windows.Forms.BindingSource driverBindingSource3;
+        private driversearchDataSetTableAdapters.DriverTableAdapter driverTableAdapter2;
+        private driversearchDataSetTableAdapters.TableAdapterManager tableAdapterManager8;
+        private System.Windows.Forms.BindingNavigator bindingNavigator4;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem3;
+        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem3;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem3;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem3;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem3;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator9;
+        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem3;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator10;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem3;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem3;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator11;
+        private System.Windows.Forms.TextBox driver_idTextBox1;
+        private System.Windows.Forms.TextBox first_nameTextBox1;
+        private System.Windows.Forms.TextBox last_nameTextBox1;
+        private System.Windows.Forms.TextBox genderTextBox;
+        private System.Windows.Forms.TextBox ageTextBox;
+        private System.Windows.Forms.TextBox salaryTextBox;
+        private System.Windows.Forms.TextBox licenseTextBox;
+        private System.Windows.Forms.BindingSource dataTable1BindingSource1;
+        private driversearchDataSetTableAdapters.DataTable1TableAdapter dataTable1TableAdapter1;
+        private System.Windows.Forms.ListBox locationListBox1;
+        private System.Windows.Forms.BindingSource driverDataTable1BindingSource3;
+        private System.Windows.Forms.ListBox categoryListBox;
+        private System.Windows.Forms.BindingSource driverDataTable1BindingSource1;
+        private System.Windows.Forms.BindingSource driverDataTable1BindingSource2;
+        private System.Windows.Forms.ListBox machine_idListBox;
+        private System.Windows.Forms.BindingSource driverDataTable1BindingSource;
+        private System.Windows.Forms.TabPage tabPage13;
+        private driverlistDataSet driverlistDataSet;
+        private System.Windows.Forms.BindingSource driverBindingSource4;
+        private driverlistDataSetTableAdapters.DriverTableAdapter driverTableAdapter3;
+        private driverlistDataSetTableAdapters.TableAdapterManager tableAdapterManager9;
+        private System.Windows.Forms.BindingNavigator bindingNavigator5;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem4;
+        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem4;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem4;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem4;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem4;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator12;
+        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem4;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator13;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem4;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem4;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator14;
+        private System.Windows.Forms.DataGridView driverDataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn88;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn89;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn90;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn91;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn92;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn93;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn94;
+        private System.Windows.Forms.TabPage tabPage14;
+        private editdrivermachinesDataSet editdrivermachinesDataSet;
+        private System.Windows.Forms.BindingSource driverMachinesBindingSource;
+        private editdrivermachinesDataSetTableAdapters.DriverMachinesTableAdapter driverMachinesTableAdapter;
+        private editdrivermachinesDataSetTableAdapters.TableAdapterManager tableAdapterManager10;
+        private System.Windows.Forms.TextBox driver_idTextBox2;
+        private System.Windows.Forms.TextBox first_nameTextBox2;
+        private System.Windows.Forms.TextBox last_nameTextBox2;
+        private System.Windows.Forms.TextBox category_idTextBox1;
+        private System.Windows.Forms.TextBox titleTextBox1;
+        private System.Windows.Forms.TextBox priceTextBox1;
+        private System.Windows.Forms.TextBox locationTextBox1;
+        private System.Windows.Forms.BindingSource lastdriver_idBindingSource;
+        private editdrivermachinesDataSetTableAdapters.Lastdriver_idTableAdapter lastdriver_idTableAdapter;
+        private System.Windows.Forms.TextBox driver_idTextBox3;
+        private System.Windows.Forms.BindingSource driverdescriptionBindingSource;
+        private editdrivermachinesDataSetTableAdapters.DriverdescriptionTableAdapter driverdescriptionTableAdapter;
+        private System.Windows.Forms.BindingNavigator bindingNavigator6;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem5;
+        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem5;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem5;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem5;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem5;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator15;
+        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem5;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator16;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem5;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem5;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator17;
+        private System.Windows.Forms.DataGridView driverdescriptionDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn95;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn96;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn97;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn98;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn99;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn100;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn101;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn102;
     }
 }
 
