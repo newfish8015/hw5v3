@@ -86,6 +86,36 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="machineDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>machineDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="machine_category_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>machine_category_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="machine_driver_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>machine_driver_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="machine_key_search_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>machine_key_search_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="machine_location_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>machine_location_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="mation_location_DataSet_detail.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mation_location_DataSet_detail.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -154,6 +184,72 @@
     </None>
     <None Include="BusinessDataSet_Tim5.xss">
       <DependentUpon>BusinessDataSet_Tim5.xsd</DependentUpon>
+    </None>
+    <None Include="machineDataSet.xsc">
+      <DependentUpon>machineDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="machineDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>machineDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="machineDataSet.xss">
+      <DependentUpon>machineDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="machine_category_DataSet.xsc">
+      <DependentUpon>machine_category_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="machine_category_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>machine_category_DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="machine_category_DataSet.xss">
+      <DependentUpon>machine_category_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="machine_driver_DataSet.xsc">
+      <DependentUpon>machine_driver_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="machine_driver_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>machine_driver_DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="machine_driver_DataSet.xss">
+      <DependentUpon>machine_driver_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="machine_key_search_DataSet.xsc">
+      <DependentUpon>machine_key_search_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="machine_key_search_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>machine_key_search_DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="machine_key_search_DataSet.xss">
+      <DependentUpon>machine_key_search_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="machine_location_DataSet.xsc">
+      <DependentUpon>machine_location_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="machine_location_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>machine_location_DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="machine_location_DataSet.xss">
+      <DependentUpon>machine_location_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="mation_location_DataSet_detail.xsc">
+      <DependentUpon>mation_location_DataSet_detail.xsd</DependentUpon>
+    </None>
+    <None Include="mation_location_DataSet_detail.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mation_location_DataSet_detail.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mation_location_DataSet_detail.xss">
+      <DependentUpon>mation_location_DataSet_detail.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
