@@ -3945,7 +3945,7 @@ namespace hw5v3
             this.dataGridViewTextBoxColumn86,
             this.dataGridViewTextBoxColumn87});
             this.driverDataGridView.DataSource = this.driverBindingSource2;
-            this.driverDataGridView.Location = new System.Drawing.Point(3, 31);
+            this.driverDataGridView.Location = new System.Drawing.Point(6, 31);
             this.driverDataGridView.Name = "driverDataGridView";
             this.driverDataGridView.RowTemplate.Height = 24;
             this.driverDataGridView.Size = new System.Drawing.Size(772, 357);
